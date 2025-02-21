@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Orelega";
+  src: url(/Assets/fonts/Orelega_One/OrelegaOne-Regular.ttf);
+}
+@font-face {
+  font-family: "Bricolage";
+  src: url(/Assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Open";
+  src: url(/Assets/fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Rubik";
+  src: url(/Assets/fonts/Rubik-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik";
+  color: rgb(56, 56, 56);
+}
+
+html {
+  --var-textcolor-light: rgb(22, 22, 22);
+  --var-bg-color-light: rgb(243, 243, 243);
+  --var-border-color-light: orange;
+  scroll-behavior: smooth;
+}
+
+.darkModeTheme {
+  background-color: rgb(22, 22, 22);
+  color: white;
+}
+
+body {
+  background-color: var(--var-bg-color-light);
+  max-width: 1300px;
+  margin: auto;
+
+  .logo-Dev-By-Flav {
+    height: 130px;
+    width: 130px;
+    background: url(/Assets/imgs/logo-transparent-svg.svg) no-repeat;
+    background-size: cover;
+    background-position: center left -15px;
+    position: fixed;
+    left: 0;
+    top: 15px;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: rgb(243, 243, 243);
+    border: 2px solid orange;
+    border-left: none;
+    z-index: 1000;
+  }
+
+  .scroller {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    z-index: 1000;
+    background: linear-gradient(
+      to right,
+      orange 100%,
+      rgba(255, 255, 255, 0.877) 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0;
+    transform-origin: left;
+    animation: scroll linear;
+    animation-timeline: scroll();
+    animation-range-start: cover 100px;
+    animation-range-end: cover 100%;
+  }
+
+  @keyframes scroll {
+    from {
+      background-size: 0% 5px;
+    }
+    to {
+      background-size: 100% 5px;
+    }
+  }
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  line-height: 20px;
+}
+span {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+}
+i {
+  color: orange;
+  font-size: 15px;
+  padding: 0 5px;
+}
+a {
+  text-decoration: none;
+}
+
+#buttonUp {
+  position: fixed;
+  bottom: 12vh;
+  right: 5vw;
+  color: white;
+  z-index: 1000;
+  cursor: pointer;
+  transition: 0.5s ease;
+  visibility: hidden;
+  opacity: 0;
+
+  i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    color: white;
+    background-color: orange;
+    border: 1px solid white;
+    transition: 0.3s ease;
+    &:hover {
+      color: orange;
+      border: 1px solid orange;
+      background-color: rgb(243, 243, 243);
+      border-radius: 50%;
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 10vh;
+  background: url("/Assets/imgs/3.jpeg") center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  height: 100vh;
+}

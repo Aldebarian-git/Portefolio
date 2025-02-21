@@ -1,0 +1,76 @@
+#game {
+  width: 90%;
+  max-width: 1200px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 4rem auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .score {
+    color: #ffa500;
+    font-size: 4rem;
+    font-family: "Rubik";
+  }
+
+  .gamebox {
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    cursor: url(/Assets/imgs/crosshair.ico) 16 16, crosshair;
+    border: 1px solid orange;
+    border-radius: 50px;
+
+    .bubble {
+      position: absolute;
+      border-radius: 300px;
+      background: orange;
+      opacity: 0;
+      animation: bubble 8s forwards;
+      filter: hue-rotate(-30deg);
+
+      @keyframes bubble {
+        to {
+          top: -150px;
+          left: var(--left);
+          opacity: 1;
+          filter: hue-rotate(-31deg);
+        }
+      }
+    }
+  }
+  .rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    h2 {
+      font-family: "Rubik";
+      font-weight: 100;
+      span {
+        font-family: "Rubik";
+        font-size: 3rem;
+        color: orange;
+      }
+    }
+    h3 {
+      font-family: "Rubik";
+      font-weight: 100;
+    }
+  }
+  .arrow-orange {
+    background: url(/Assets/imgs/arrow.png) center/contain no-repeat;
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    top: 90px;
+    left: 45%;
+  }
+}
+

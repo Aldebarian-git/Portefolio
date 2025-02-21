@@ -1,0 +1,120 @@
+#aboutme {
+  height: 60vh;
+  width: 90%;
+  max-width: 1200px;
+  margin: 4vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  // overflow: hidden;
+
+  .aboutmeContent {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: rgb(243, 243, 243);
+
+    .aboutmeCadre {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      border: 1px solid orange;
+      transition: border-radius 1s ease, opacity 0.5s, transform 0.4s;
+      border-radius: 100%;
+      transform: translateX(200%);
+    }
+
+    .aboutmeLeft {
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-200%);
+      transition: 0.5s ease;
+
+      p {
+        padding: 20px 30px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: max-height 0.5s ease-in-out;
+        max-height: 100px;
+      }
+      .aboutme-infos.expanded {
+        -webkit-line-clamp: unset;
+        max-height: 471px;
+      }
+
+      .cadre {
+        border: 1px solid orange;
+        display: inline-block;
+        transition: 0.3s ease;
+        &:hover {
+          border-radius: 10px;
+        }
+      }
+
+      #see-more-btn {
+        display: block;
+        text-transform: uppercase;
+        color: white;
+        font-family: "Rubik", sans-serif;
+        background-color: orange;
+        padding: 15px 30px;
+        transition: 0.3s ease;
+        border: none;
+        cursor: pointer;
+        margin: 5px;
+      }
+      #see-more-btn:hover {
+        background-color: rgb(243, 243, 243);
+        color: orange;
+        cursor: pointer;
+      }
+    }
+    .aboutmeRight {
+      background: url(/Assets/imgs/flavien2.png) no-repeat;
+      background-size: cover;
+      background-position: center bottom -22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      background-color: orange;
+      border-radius: 100%;
+      transition: border-radius 1s ease, opacity 0.5s;
+    }
+  }
+
+  .aboutme-title {
+    font-family: "Rubik";
+    font-weight: 100;
+    margin: 20px auto;
+    position: relative;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin: 0 30px;
+    padding: 0 10px;
+    transform: translateY(-200px);
+    transition: 0.5s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-top: 26px solid rgb(255, 166, 0);
+      width: 3px;
+      top: 0;
+      left: 0;
+    }
+  }
+}

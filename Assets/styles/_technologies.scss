@@ -1,0 +1,122 @@
+#skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  scroll-margin-top: 120px;
+  margin: auto;
+  max-width: 1200px;
+  height: 50vh;
+}
+
+#hardSkill {
+  width: 50%;
+  margin: 0 auto;
+
+  .hardSkill-title {
+    font-family: "Rubik";
+    font-weight: 100;
+    margin: 20px auto;
+    position: relative;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin: 0 30px;
+    padding: 0 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-top: 26px solid rgb(255, 166, 0);
+      width: 3px;
+      top: 0;
+      left: 0;
+    }
+  }
+  h3 {
+    font-family: "Rubik";
+  }
+  #stacksContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: min-content;
+    max-width: 500px;
+    margin: 24px auto;
+
+    div {
+      border: 1px solid orange;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0.5rem;
+      border-radius: 5px;
+      box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.151);
+      background-color: white;
+    }
+    span {
+      margin: 0.5rem 0;
+    }
+  }
+  img {
+    height: 100%;
+    max-height: 80px;
+    width: 100%;
+    max-width: 80px;
+    margin: 1rem;
+  }
+}
+
+#softSkill {
+  width: 50%;
+  margin: 0 auto;
+  .softSkill-title {
+    font-family: "Rubik";
+    font-weight: 100;
+    margin: 20px auto;
+    position: relative;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin: 0 30px;
+    padding: 0 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-top: 26px solid rgb(255, 166, 0);
+      width: 3px;
+      top: 0;
+      left: 0;
+    }
+  }
+  #softSkillContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: min-content;
+    max-width: 500px;
+    margin: 24px auto;
+
+    div {
+      border: 1px solid orange;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0.5rem;
+      border-radius: 5px;
+      box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.151);
+      background-color: white;
+    }
+    span {
+      margin: 0.5rem 0;
+    }
+  }
+  img {
+    height: 100%;
+    max-height: 80px;
+    width: 100%;
+    max-width: 80px;
+    margin: 1rem;
+  }
+}

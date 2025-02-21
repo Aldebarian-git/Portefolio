@@ -1,0 +1,45 @@
+// ********************TextType*******************
+#slogan {
+  width: 100%;
+  margin: 0.5rem;
+  font-family: "Rubik";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  h3 {
+    font-weight: 100;
+    font-size: 2rem;
+  }
+}
+#target {
+  display: flex;
+  margin-left: 1rem;
+  position: relative;
+  span {
+    font-size: 2rem;
+    font-family: "Rubik";
+    font-weight: 100;
+  }
+}
+#target::after {
+  content: "";
+  position: absolute;
+  height: 3rem;
+  width: 3px;
+  background: black;
+  top: 0;
+  transform: translateY(-4px);
+  right: -5px;
+  animation: anim 0.8s linear infinite;
+}
+
+@keyframes anim {
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
