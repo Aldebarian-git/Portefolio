@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Orelega";
-  src: url(/Assets/fonts/Orelega_One/OrelegaOne-Regular.ttf);
+  src: url(./Assets/fonts/Orelega_One/OrelegaOne-Regular.ttf);
 }
 @font-face {
   font-family: "Bricolage";
-  src: url(/Assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Regular.ttf);
+  src: url(./Assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Regular.ttf);
 }
 @font-face {
   font-family: "Open";
-  src: url(/Assets/fonts/Open_Sans/static/OpenSans-Regular.ttf);
+  src: url(./Assets/fonts/Open_Sans/static/OpenSans-Regular.ttf);
 }
 @font-face {
   font-family: "Rubik";
-  src: url(/Assets/fonts/Rubik-Regular.ttf);
+  src: url(./Assets/fonts/Rubik-Regular.ttf);
 }
 * {
   margin: 0;
@@ -43,7 +43,7 @@ body {
 body .logo-Dev-By-Flav {
   height: 130px;
   width: 130px;
-  background: url(/Assets/imgs/logo-transparent-svg.svg) no-repeat;
+  background: url(./Assets/imgs/logo-transparent-svg.svg) no-repeat;
   background-size: cover;
   background-position: center left -15px;
   position: fixed;
@@ -158,7 +158,7 @@ a {
 .banner {
   width: 100%;
   height: 10vh;
-  background: url("/Assets/imgs/3.jpeg") center/cover no-repeat;
+  background: url("./Assets/imgs/3.jpeg") center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -358,7 +358,7 @@ a {
 }
 
 header {
-  background: url(/Assets/imgs/banner.jpeg) center/cover;
+  background: url(./Assets/imgs/banner.jpeg) center/cover;
   background-attachment: fixed;
   width: 100%;
   height: calc(40vh - 100px);
@@ -522,7 +522,7 @@ header .header-right {
   cursor: pointer;
 }
 #aboutme .aboutmeContent .aboutmeRight {
-  background: url(/Assets/imgs/flavien2.png) no-repeat;
+  background: url(./Assets/imgs/flavien2.png) no-repeat;
   background-size: cover;
   background-position: center bottom -22px;
   display: -webkit-box;
@@ -1193,7 +1193,7 @@ header .header-right {
   margin: auto;
   position: relative;
   overflow: hidden;
-  cursor: url(/Assets/imgs/crosshair.ico) 16 16, crosshair;
+  cursor: url(./Assets/imgs/crosshair.ico) 16 16, crosshair;
   border: 1px solid orange;
   border-radius: 50px;
 }
@@ -1255,7 +1255,7 @@ header .header-right {
   font-weight: 100;
 }
 #game .arrow-orange {
-  background: url(/Assets/imgs/arrow.png) center/contain no-repeat;
+  background: url(./Assets/imgs/arrow.png) center/contain no-repeat;
   height: 100px;
   width: 150px;
   position: absolute;
