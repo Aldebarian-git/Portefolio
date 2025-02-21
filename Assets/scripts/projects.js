@@ -8,7 +8,7 @@ const projects = [
   // },
   {
     name: "La Montagne",
-    image: "../Assets/imgs/lamontagne.jpg",
+    image: "./Assets/imgs/lamontagne.jpg",
     technologies: ["HTML", "CSS"],
     description: "Une intégration d'une maquette d'un blog sur la montagne",
     link: "#",
