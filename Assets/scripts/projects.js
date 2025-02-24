@@ -46,7 +46,7 @@ const projects = [
     image: "./Assets/imgs/ghibliotheque.jpg",
     technologies: ["HTML", "CSS", "JavaScript"],
     description: "Pour les Ghibliphile",
-    link: "#",
+    link: "https://github.com/Aldebarian-git/GhibliO-Theque",
   },
 ];
 
