@@ -144,7 +144,7 @@ function createProject() {
     const projectLink = document.createElement("a");
     projectLink.href = `${project.link}`; // Définir l'attribut href
     projectLink.classList.add("newProjet", "projetS");
-    projectLink.style.background = `url(${project.image}) center/cover`;
+    projectLink.style.background = `url(${project.image}) center/cover no-repeat`;
 
     // Ajouter une div pour le cadre du titre
     const createCadreTop = document.createElement("div");
