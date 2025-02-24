@@ -7,11 +7,11 @@ const projects = [
   //   link: "#",
   // },
   {
-    name: "La Montagne",
-    image: "./Assets/imgs/lamontagne.jpg",
-    technologies: ["HTML", "CSS"],
-    description: "Une intégration d'une maquette d'un blog sur la montagne",
-    link: "#",
+    name: "O'Coffee",
+    image: "./Assets/imgs/ocoffee.jpg",
+    technologies: ["HTML", "CSS", "EJS", "JS"],
+    description: "Un site vitrine d'un détaillant de café, réalisé seul, comportant un back office entièrement fonctionnel",
+    link: "https://ocoffee-production-4b58.up.railway.app",
   },
   {
     name: "Gaming Campus",
@@ -24,7 +24,7 @@ const projects = [
     name: "Heros League",
     image: "./Assets/imgs/heroLeague.jpg",
     technologies: ["HTML", "CSS"],
-    description: "Une création originale d'un site de service de super-héros",
+    description: "Intégration d'un site web de service de super-héros",
     link: "#",
   },
   {

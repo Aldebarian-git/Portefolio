@@ -140,39 +140,41 @@ function createProject() {
   const containerProjects = document.querySelector(".container-projets");
 
   projects.forEach((project) => {
-    // Créer un conteneur pour chaque projet
-    const projectDiv = document.createElement("div");
+    // Créer un élément <a> au lieu d'une <div> pour encapsuler le projet
+    const projectLink = document.createElement("a");
+    projectLink.href = `${project.link}`; // Définir l'attribut href
+    projectLink.classList.add("newProjet", "projetS");
+    projectLink.style.background = `url(${project.image}) center/cover`;
 
-    projectDiv.classList.add("newProjet");
-    projectDiv.classList.add("projetS");
-    projectDiv.style.background = `url(${project.image}) center/cover`;
-
-    // Ajouter une div pour le cadre en css qui comportera le h3 qui est le nom du projet
+    // Ajouter une div pour le cadre du titre
     const createCadreTop = document.createElement("div");
     createCadreTop.classList.add("projetCadreTop");
+
     // Ajouter le nom du projet
     const projectName = document.createElement("h3");
     projectName.textContent = project.name;
     createCadreTop.appendChild(projectName);
-    projectDiv.appendChild(createCadreTop);
+    projectLink.appendChild(createCadreTop);
 
-    // Ajouter une div pour le cadre en css qui comportera le p qui est la description du projet
+    // Ajouter une div pour le cadre de la description
     const createCadreBottom = document.createElement("div");
     createCadreBottom.classList.add("projetCadreBottom");
+
     // Ajouter une description
     const projectDescription = document.createElement("p");
     projectDescription.textContent = project.description;
     createCadreBottom.appendChild(projectDescription);
-    projectDiv.appendChild(createCadreBottom);
+    projectLink.appendChild(createCadreBottom);
 
     // Ajouter un filtre qui ne sera pas encore visible
     const backgroundFilter = document.createElement("div");
     backgroundFilter.classList.add("filters");
-    projectDiv.appendChild(backgroundFilter);
+    projectLink.appendChild(backgroundFilter);
 
     // Ajouter le projet au conteneur principal
-    containerProjects.appendChild(projectDiv);
-  });
+    containerProjects.appendChild(projectLink);
+});
+
 }
 /**
  * Fonction qui permet de créer autant de stackContainer en fonction du nombre d'élément dans stacks.js
