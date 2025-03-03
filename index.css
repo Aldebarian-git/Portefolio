@@ -29,6 +29,15 @@ html {
   --var-border-color-light: orange;
   scroll-behavior: smooth;
 }
+@media screen and (max-width: 480px) {
+  html {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    margin: auto;
+    overflow-x: hidden;
+  }
+}
 
 .darkModeTheme {
   background-color: rgb(22, 22, 22);
@@ -39,6 +48,15 @@ body {
   background-color: var(--var-bg-color-light);
   max-width: 1300px;
   margin: auto;
+}
+@media screen and (max-width: 480px) {
+  body {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    margin: auto;
+    overflow-x: hidden;
+  }
 }
 body .logo-Dev-By-Flav {
   height: 130px;
@@ -55,6 +73,11 @@ body .logo-Dev-By-Flav {
   border: 2px solid orange;
   border-left: none;
   z-index: 1000;
+}
+@media screen and (max-width: 480px) {
+  body .logo-Dev-By-Flav {
+    display: none;
+  }
 }
 body .scroller {
   position: fixed;
@@ -74,6 +97,11 @@ body .scroller {
   animation-timeline: scroll();
   animation-range-start: cover 100px;
   animation-range-end: cover 100%;
+}
+@media screen and (max-width: 480px) {
+  body .scroller {
+    display: none;
+  }
 }
 @-webkit-keyframes scroll {
   from {
@@ -129,6 +157,11 @@ a {
   visibility: hidden;
   opacity: 0;
 }
+@media screen and (max-width: 480px) {
+  #buttonUp {
+    display: none;
+  }
+}
 #buttonUp i {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,6 +193,11 @@ a {
   height: 10vh;
   background: url("./Assets/imgs/3.jpeg") center/cover no-repeat;
   background-attachment: fixed;
+}
+@media screen and (max-width: 480px) {
+  .banner {
+    margin: 10px 0;
+  }
 }
 
 .hidden {
@@ -197,6 +235,11 @@ a {
   border-bottom: 1px solid orange;
   z-index: 1001;
 }
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+}
 .navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,6 +251,11 @@ a {
   gap: 1rem;
   font-family: "Rubik";
   font-weight: 500;
+}
+@media screen and (max-width: 480px) {
+  .navbar ul {
+    display: none;
+  }
 }
 .navbar ul span {
   font-family: "Rubik";
@@ -268,6 +316,11 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 0 1rem;
+}
+@media screen and (max-width: 480px) {
+  .navbar .contact {
+    gap: 15px;
+  }
 }
 .navbar .contact li {
   position: relative;
@@ -365,6 +418,13 @@ header {
   -webkit-transition: 1s ease;
   transition: 1s ease;
 }
+@media screen and (max-width: 480px) {
+  header {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+}
 header #headerContainer {
   height: 100%;
   margin: 0 auto;
@@ -377,6 +437,13 @@ header #headerContainer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  header #headerContainer {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
 }
 header #headerContainer .headerCadre {
   border: 2px solid white;
@@ -431,10 +498,28 @@ header .header-right {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (max-width: 480px) {
+  #aboutme {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+}
 #aboutme .aboutmeContent {
   display: grid;
   grid-template-columns: 60% 40%;
   background-color: rgb(243, 243, 243);
+}
+@media screen and (max-width: 480px) {
+  #aboutme .aboutmeContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 #aboutme .aboutmeContent .aboutmeCadre {
   display: -webkit-box;
@@ -478,11 +563,17 @@ header .header-right {
           transform: translateX(-200%);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  display: grid;
+}
+@media screen and (max-width: 480px) {
+  #aboutme .aboutmeContent .aboutmeLeft {
+    gap: 15px;
+  }
 }
 #aboutme .aboutmeContent .aboutmeLeft p {
   padding: 20px 30px;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -492,13 +583,22 @@ header .header-right {
 }
 #aboutme .aboutmeContent .aboutmeLeft .aboutme-infos.expanded {
   -webkit-line-clamp: unset;
-  max-height: 471px;
+  max-height: 700px;
 }
 #aboutme .aboutmeContent .aboutmeLeft .cadre {
   border: 1px solid orange;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
 }
 #aboutme .aboutmeContent .aboutmeLeft .cadre:hover {
   border-radius: 10px;
@@ -542,6 +642,11 @@ header .header-right {
   -webkit-transition: border-radius 1s ease, opacity 0.5s;
   transition: border-radius 1s ease, opacity 0.5s;
 }
+@media screen and (max-width: 480px) {
+  #aboutme .aboutmeContent .aboutmeRight {
+    height: 499px;
+  }
+}
 #aboutme .aboutme-title {
   font-family: "Rubik";
   font-weight: 100;
@@ -583,10 +688,27 @@ header .header-right {
   max-width: 1200px;
   height: 50vh;
 }
+@media screen and (max-width: 480px) {
+  #skill {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+}
 
 #hardSkill {
   width: 50%;
   margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  #hardSkill {
+    width: 100%;
+  }
 }
 #hardSkill .hardSkill-title {
   font-family: "Rubik";
@@ -619,6 +741,11 @@ header .header-right {
   height: min-content;
   max-width: 500px;
   margin: 24px auto;
+}
+@media screen and (max-width: 480px) {
+  #hardSkill #stacksContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 #hardSkill #stacksContainer div {
   border: 1px solid orange;
@@ -656,6 +783,11 @@ header .header-right {
   width: 50%;
   margin: 0 auto;
 }
+@media screen and (max-width: 480px) {
+  #softSkill {
+    width: 100%;
+  }
+}
 #softSkill .softSkill-title {
   font-family: "Rubik";
   font-weight: 100;
@@ -678,12 +810,17 @@ header .header-right {
 }
 #softSkill #softSkillContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
   max-width: 500px;
   margin: 24px auto;
+}
+@media screen and (max-width: 480px) {
+  #softSkill #softSkillContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 #softSkill #softSkillContainer div {
   border: 1px solid orange;
@@ -755,6 +892,11 @@ header .header-right {
   margin: 0.9rem auto;
   scroll-margin-top: 120px;
 }
+@media screen and (max-width: 480px) {
+  #projets .projets-title-container {
+    width: 100%;
+  }
+}
 #projets .mesProjets-title {
   font-family: "Rubik";
   font-weight: 100;
@@ -787,6 +929,11 @@ header .header-right {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   background-color: orange;
+}
+@media screen and (max-width: 480px) {
+  #projets .container-projets {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 #projets .container-projets .newProjet {
   height: 350px;
@@ -903,6 +1050,12 @@ header .header-right {
   margin: auto;
   position: relative;
   scroll-margin-top: 120px;
+}
+@media screen and (max-width: 480px) {
+  #experience {
+    width: 100%;
+    display: none;
+  }
 }
 #experience h2:first-child {
   text-align: center;
@@ -1181,6 +1334,19 @@ header .header-right {
           align-items: center;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  #game {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+    height: 500px;
+  }
+}
 #game .score {
   color: #ffa500;
   font-size: 4rem;
@@ -1196,6 +1362,11 @@ header .header-right {
   cursor: url(./Assets/imgs/crosshair.ico) 16 16, crosshair;
   border: 1px solid orange;
   border-radius: 50px;
+}
+@media screen and (max-width: 480px) {
+  #game .gamebox {
+    width: 90%;
+  }
 }
 #game .gamebox .bubble {
   position: absolute;
@@ -1262,6 +1433,11 @@ header .header-right {
   top: 90px;
   left: 45%;
 }
+@media screen and (max-width: 480px) {
+  #game .arrow-orange {
+    display: none;
+  }
+}
 
 #slogan {
   width: 100%;
@@ -1282,6 +1458,11 @@ header .header-right {
   font-weight: 100;
   font-size: 2rem;
 }
+@media screen and (max-width: 480px) {
+  #slogan h3 {
+    font-size: 1.5rem;
+  }
+}
 
 #target {
   display: -webkit-box;
@@ -1294,6 +1475,11 @@ header .header-right {
   font-size: 2rem;
   font-family: "Rubik";
   font-weight: 100;
+}
+@media screen and (max-width: 480px) {
+  #target span {
+    font-size: 1.5rem;
+  }
 }
 
 #target::after {

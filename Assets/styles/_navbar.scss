@@ -9,6 +9,11 @@
   align-items: center;
   border-bottom: 1px solid orange;
   z-index: 1001;
+  @media screen and (max-width: 480px) {
+    display: none;   
+    
+  }
+  
 
   ul {
     display: flex;
@@ -16,6 +21,9 @@
     gap: 1rem;
     font-family: "Rubik";
     font-weight: 500;
+    @media screen and (max-width: 480px) {
+    display: none;
+    }
     span {
       font-family: "Rubik";
       font-size: 16px;
@@ -26,6 +34,7 @@
       flex-direction: column;
       align-items: center;
       transition: 0.3s ease;
+      
 
       i {
         font-size: 25px;
@@ -55,6 +64,9 @@
     display: flex;
     flex-direction: row;
     margin: 0 1rem;
+    @media screen and (max-width: 480px) {
+    gap: 15px;
+    }
 
     li {
       position: relative;

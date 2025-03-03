@@ -1,9 +1,13 @@
 header {
-  background: url(/Assets/imgs/banner.jpeg) center/cover;
+  background: url(./Assets/imgs/banner.jpeg) center/cover;
   background-attachment: fixed;
   width: 100%;
   height: calc(40vh - 100px);
   transition: 1s ease;
+  @media screen and (max-width: 480px) {
+    height: min-content;
+    
+}
 
   #headerContainer {
     height: 100%;
@@ -11,9 +15,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 480px) {
+        height: min-content;
+    }
 
     .headerCadre {
       border: 2px solid white;
+      
+      
     }
   }
   .header-left {

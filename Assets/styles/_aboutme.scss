@@ -7,12 +7,18 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  // overflow: hidden;
+  @media screen and (max-width: 480px) {    
+    height: min-content;
+}
 
   .aboutmeContent {
     display: grid;
     grid-template-columns: 60% 40%;
     background-color: rgb(243, 243, 243);
+    @media screen and (max-width: 480px) {
+      display: flex;
+      flex-direction: column;      
+  }
 
     .aboutmeCadre {
       display: flex;
@@ -25,7 +31,7 @@
       border: 1px solid orange;
       transition: border-radius 1s ease, opacity 0.5s, transform 0.4s;
       border-radius: 100%;
-      transform: translateX(200%);
+      transform: translateX(200%);      
     }
 
     .aboutmeLeft {
@@ -36,11 +42,18 @@
       justify-content: center;
       transform: translateX(-200%);
       transition: 0.5s ease;
+      display: grid;
+      @media screen and (max-width: 480px) {    
+        gap: 15px;
+                
+    }
+      
+    
 
       p {
         padding: 20px 30px;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -49,13 +62,16 @@
       }
       .aboutme-infos.expanded {
         -webkit-line-clamp: unset;
-        max-height: 471px;
+        max-height: 700px;
       }
 
       .cadre {
         border: 1px solid orange;
-        display: inline-block;
+        display: flex;
         transition: 0.3s ease;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
         &:hover {
           border-radius: 10px;
         }
@@ -79,8 +95,10 @@
         cursor: pointer;
       }
     }
+
+    
     .aboutmeRight {
-      background: url(/Assets/imgs/flavien2.png) no-repeat;
+      background: url(./Assets/imgs/flavien2.png) no-repeat;
       background-size: cover;
       background-position: center bottom -22px;
       display: flex;
@@ -92,6 +110,9 @@
       background-color: orange;
       border-radius: 100%;
       transition: border-radius 1s ease, opacity 0.5s;
+      @media screen and (max-width: 480px) {    
+        height: 499px;
+    }
     }
   }
 

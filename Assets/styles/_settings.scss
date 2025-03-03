@@ -1,20 +1,24 @@
 @font-face {
   font-family: "Orelega";
-  src: url(/Assets/fonts/Orelega_One/OrelegaOne-Regular.ttf);
+  src: url(./Assets/fonts/Orelega_One/OrelegaOne-Regular.ttf);
 }
 @font-face {
   font-family: "Bricolage";
-  src: url(/Assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Regular.ttf);
+  src: url(./Assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Regular.ttf);
 }
 
 @font-face {
   font-family: "Open";
-  src: url(/Assets/fonts/Open_Sans/static/OpenSans-Regular.ttf);
+  src: url(./Assets/fonts/Open_Sans/static/OpenSans-Regular.ttf);
 }
 @font-face {
   font-family: "Rubik";
-  src: url(/Assets/fonts/Rubik-Regular.ttf);
+  src: url(./Assets/fonts/Rubik-Regular.ttf);
 }
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
 
 * {
   margin: 0;
@@ -29,6 +33,12 @@ html {
   --var-bg-color-light: rgb(243, 243, 243);
   --var-border-color-light: orange;
   scroll-behavior: smooth;
+  @media screen and (max-width: 480px) {    
+    width: min-content;
+    margin: auto;
+    overflow-x: hidden;
+  }
+  
 }
 
 .darkModeTheme {
@@ -40,11 +50,17 @@ body {
   background-color: var(--var-bg-color-light);
   max-width: 1300px;
   margin: auto;
+  
+  @media screen and (max-width: 480px) {    
+    width: min-content;
+    margin: auto;
+    overflow-x: hidden;
+  }
 
   .logo-Dev-By-Flav {
     height: 130px;
     width: 130px;
-    background: url(/Assets/imgs/logo-transparent-svg.svg) no-repeat;
+    background: url(./Assets/imgs/logo-transparent-svg.svg) no-repeat;
     background-size: cover;
     background-position: center left -15px;
     position: fixed;
@@ -56,6 +72,9 @@ body {
     border: 2px solid orange;
     border-left: none;
     z-index: 1000;
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
 
   .scroller {
@@ -77,6 +96,9 @@ body {
     animation-timeline: scroll();
     animation-range-start: cover 100px;
     animation-range-end: cover 100%;
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
 
   @keyframes scroll {
@@ -121,6 +143,9 @@ a {
   transition: 0.5s ease;
   visibility: hidden;
   opacity: 0;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 
   i {
     display: flex;
@@ -145,8 +170,11 @@ a {
 .banner {
   width: 100%;
   height: 10vh;
-  background: url("/Assets/imgs/3.jpeg") center/cover no-repeat;
+  background: url("./Assets/imgs/3.jpeg") center/cover no-repeat;
   background-attachment: fixed;
+  @media screen and (max-width: 480px) {
+    margin: 10px 0;
+  }
 }
 
 .hidden {

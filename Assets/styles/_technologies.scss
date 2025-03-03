@@ -7,11 +7,19 @@
   margin: auto;
   max-width: 1200px;
   height: 50vh;
+  @media screen and (max-width: 480px) {    
+    height: min-content;
+    flex-direction: column;
+    margin: auto;
+}
 }
 
 #hardSkill {
   width: 50%;
   margin: 0 auto;
+  @media screen and (max-width: 480px) {    
+    width: 100%;
+}
 
   .hardSkill-title {
     font-family: "Rubik";
@@ -42,6 +50,9 @@
     height: min-content;
     max-width: 500px;
     margin: 24px auto;
+    @media screen and (max-width: 480px) {
+      grid-template-columns: repeat(2, 1fr); // Garde 3 colonnes même en dessous de 480px
+    }
 
     div {
       border: 1px solid orange;
@@ -70,6 +81,9 @@
 #softSkill {
   width: 50%;
   margin: 0 auto;
+  @media screen and (max-width: 480px) {    
+    width: 100%;
+}
   .softSkill-title {
     font-family: "Rubik";
     font-weight: 100;
@@ -80,6 +94,7 @@
     width: 100%;
     margin: 0 30px;
     padding: 0 10px;
+    
 
     &::before {
       content: "";
@@ -92,10 +107,17 @@
   }
   #softSkillContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); // 3 colonnes égales
     height: min-content;
     max-width: 500px;
     margin: 24px auto;
+  
+    @media screen and (max-width: 480px) {
+      grid-template-columns: repeat(2, 1fr); // Garde 3 colonnes même en dessous de 480px
+    }
+  
+  
+    
 
     div {
       border: 1px solid orange;

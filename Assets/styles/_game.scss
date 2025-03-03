@@ -8,6 +8,15 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 500px;
+    
+    
+  }
 
   .score {
     color: #ffa500;
@@ -22,9 +31,12 @@
     margin: auto;
     position: relative;
     overflow: hidden;
-    cursor: url(/Assets/imgs/crosshair.ico) 16 16, crosshair;
+    cursor: url(./Assets/imgs/crosshair.ico) 16 16, crosshair;
     border: 1px solid orange;
     border-radius: 50px;
+    @media screen and (max-width: 480px) {
+      width: 90%;
+    }
 
     .bubble {
       position: absolute;
@@ -65,12 +77,15 @@
     }
   }
   .arrow-orange {
-    background: url(/Assets/imgs/arrow.png) center/contain no-repeat;
+    background: url(./Assets/imgs/arrow.png) center/contain no-repeat;
     height: 100px;
     width: 150px;
     position: absolute;
     top: 90px;
     left: 45%;
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
 }
 
