@@ -284,13 +284,20 @@ function displayAboutSection() {
     aboutMeLeft.style.transform = "translateX(0%)";
     aboutMeRight.style.transform = "translateX(0%)";
     aboutMeRight.style.borderRadius = "0%";
-    aboutMeRight.style.minHeight = "499px";
+    aboutMeRight.style.minHeight = "499px";    
     aboutMeRight.style.opacity = "1";
     aboutMeRightPicture.style.borderRadius = "0%";
     aboutMeRightPicture.style.opacity = "1";
     aboutMeTitle.style.transform = "translateY(0%)";
   });
 }
+
+const sideBar = document.getElementById("side-bar");
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", () => {
+  sideBar.classList.toggle("active");
+});
 
 createsoftskill();
 displayNavSection();
