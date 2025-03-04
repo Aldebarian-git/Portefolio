@@ -84,7 +84,7 @@ function typeEffect() {
 function displayLiAfter() {
   const li = document.querySelectorAll(".liafter");
   const span = document.querySelectorAll(".after");
-
+  
   li.forEach((l, index) => {
     l.addEventListener("mouseover", () => {
       span.forEach((s) => {
@@ -292,13 +292,25 @@ function displayAboutSection() {
   });
 }
 
-const sideBar = document.getElementById("side-bar");
-const btn = document.getElementById("btn");
+function burger() {
+  const sideBar = document.getElementById("side-bar");
+  const btn = document.getElementById("btn");
 
-btn.addEventListener("click", () => {
-  sideBar.classList.toggle("active");
-});
+  btn.addEventListener("click", (event) => {
+    event.stopPropagation(); 
+    sideBar.classList.toggle("active");
+  });
 
+  document.addEventListener("click", (event) => {
+    // Vérifie si le clic n'est pas sur le sidebar ou le bouton
+    if (!sideBar.contains(event.target) && event.target !== btn) {
+      sideBar.classList.remove("active"); // Ferme le menu
+    }
+  });
+}
+
+
+burger();
 createsoftskill();
 displayNavSection();
 displayAboutSection();
