@@ -33,11 +33,13 @@ html {
   --var-bg-color-light: rgb(243, 243, 243);
   --var-border-color-light: orange;
   scroll-behavior: smooth;
+  overflow-x: hidden;
   @media screen and (max-width: 480px) {    
     width: min-content;
     margin: auto;
     overflow-x: hidden;
   }
+  
   
 }
 
@@ -56,6 +58,7 @@ body {
     margin: auto;
     overflow-x: hidden;
   }
+  
 
   .logo-Dev-By-Flav {
     height: 130px;
@@ -73,6 +76,9 @@ body {
     border-left: none;
     z-index: 1000;
     @media screen and (max-width: 480px) {
+      display: none;
+    }
+    @media screen and (min-width: 481px) and (max-width: 900px) {
       display: none;
     }
   }
@@ -97,6 +103,9 @@ body {
     animation-range-start: cover 100px;
     animation-range-end: cover 100%;
     @media screen and (max-width: 480px) {
+      display: none;
+    }
+    @media screen and (min-width: 481px) and (max-width: 900px) {
       display: none;
     }
   }

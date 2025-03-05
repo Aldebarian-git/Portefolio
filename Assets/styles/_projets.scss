@@ -34,6 +34,10 @@
     @media screen and (max-width: 480px) {
       width: 100%;
     }
+    @media screen and (min-width: 481px) and (max-width: 900px) {
+      width: 100%; 
+                
+    }
   }
 
   .mesProjets-title {
@@ -70,6 +74,10 @@
     background-color: orange;
     @media screen and (max-width: 480px) {
       grid-template-columns: repeat(1, 1fr); // Garde 3 colonnes même en dessous de 480px
+    }
+    @media screen and (min-width: 481px) and (max-width: 900px) {
+      width: 100%; 
+      grid-template-columns: repeat(2, 1fr)          
     }
     .newProjet {
       height: 350px;

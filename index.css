@@ -28,6 +28,7 @@ html {
   --var-bg-color-light: rgb(243, 243, 243);
   --var-border-color-light: orange;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 480px) {
   html {
@@ -79,6 +80,11 @@ body .logo-Dev-By-Flav {
     display: none;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  body .logo-Dev-By-Flav {
+    display: none;
+  }
+}
 body .scroller {
   position: fixed;
   top: 0;
@@ -99,6 +105,11 @@ body .scroller {
   animation-range-end: cover 100%;
 }
 @media screen and (max-width: 480px) {
+  body .scroller {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 900px) {
   body .scroller {
     display: none;
   }
@@ -425,6 +436,11 @@ header {
     height: min-content;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  header {
+    height: 500px;
+  }
+}
 header #headerContainer {
   height: 100%;
   margin: 0 auto;
@@ -505,12 +521,29 @@ header .header-right {
     height: min-content;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  #aboutme {
+    max-height: 120vh;
+    min-height: 120vh;
+  }
+}
 #aboutme .aboutmeContent {
   display: grid;
   grid-template-columns: 60% 40%;
   background-color: rgb(243, 243, 243);
 }
 @media screen and (max-width: 480px) {
+  #aboutme .aboutmeContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 900px) {
   #aboutme .aboutmeContent {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -566,6 +599,11 @@ header .header-right {
   display: grid;
 }
 @media screen and (max-width: 480px) {
+  #aboutme .aboutmeContent .aboutmeLeft {
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 900px) {
   #aboutme .aboutmeContent .aboutmeLeft {
     gap: 15px;
   }
@@ -647,6 +685,11 @@ header .header-right {
     height: 499px;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  #aboutme .aboutmeContent .aboutmeRight {
+    height: 499px;
+  }
+}
 #aboutme .aboutme-title {
   font-family: "Rubik";
   font-weight: 100;
@@ -700,12 +743,31 @@ header .header-right {
     margin: auto;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  #skill {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    margin: 2rem 0;
+    gap: 1rem;
+  }
+}
 
 #hardSkill {
   width: 50%;
   margin: 0 auto;
 }
 @media screen and (max-width: 480px) {
+  #hardSkill {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 900px) {
   #hardSkill {
     width: 100%;
   }
@@ -745,6 +807,11 @@ header .header-right {
 @media screen and (max-width: 480px) {
   #hardSkill #stacksContainer {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  #hardSkill #stacksContainer {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 #hardSkill #stacksContainer div {
@@ -788,6 +855,11 @@ header .header-right {
     width: 100%;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  #softSkill {
+    width: 100%;
+  }
+}
 #softSkill .softSkill-title {
   font-family: "Rubik";
   font-weight: 100;
@@ -822,6 +894,11 @@ header .header-right {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  #softSkill #softSkillContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 #softSkill #softSkillContainer div {
   border: 1px solid orange;
   display: -webkit-box;
@@ -842,6 +919,11 @@ header .header-right {
   -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.151);
           box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.151);
   background-color: white;
+}
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  #softSkill #softSkillContainer div {
+    max-width: 150px;
+  }
 }
 #softSkill #softSkillContainer span {
   margin: 0.5rem 0;
@@ -897,6 +979,11 @@ header .header-right {
     width: 100%;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  #projets .projets-title-container {
+    width: 100%;
+  }
+}
 #projets .mesProjets-title {
   font-family: "Rubik";
   font-weight: 100;
@@ -933,6 +1020,12 @@ header .header-right {
 @media screen and (max-width: 480px) {
   #projets .container-projets {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  #projets .container-projets {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 #projets .container-projets .newProjet {
@@ -1057,6 +1150,11 @@ header .header-right {
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  #experience {
+    width: 100%;
   }
 }
 #experience h2:first-child {
