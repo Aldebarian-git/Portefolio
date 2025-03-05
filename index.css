@@ -41,9 +41,7 @@ html {
 }
 @media screen and (min-width: 481px) and (max-width: 900px) {
   html {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
+    width: 100%;
     margin: auto;
     overflow-x: hidden;
   }
@@ -532,12 +530,9 @@ header .header-right {
 }
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #aboutme {
-    max-height: -webkit-min-content;
-    max-height: -moz-min-content;
-    max-height: min-content;
-    min-height: -webkit-min-content;
-    min-height: -moz-min-content;
-    min-height: min-content;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
   }
 }
 #aboutme .aboutmeContent {
@@ -701,6 +696,8 @@ header .header-right {
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #aboutme .aboutmeContent .aboutmeRight {
     height: 499px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 #aboutme .aboutme-title {

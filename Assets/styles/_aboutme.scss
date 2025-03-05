@@ -11,8 +11,8 @@
     height: min-content;
 }
 @media screen and (min-width: 481px) and (max-width: 900px) {
-  max-height: min-content;
-  min-height: min-content;
+  height: min-content;
+  
   
 }
 
@@ -41,7 +41,9 @@
       border: 1px solid orange;
       transition: border-radius 1s ease, opacity 0.5s, transform 0.4s;
       border-radius: 100%;
-      transform: translateX(200%);      
+      transform: translateX(200%);
+          
+           
     }
 
     .aboutmeLeft {
@@ -129,6 +131,8 @@
     }
     @media screen and (min-width: 481px) and (max-width: 900px) {
       height: 499px;
+      width: 100%;
+      margin: 0 auto;
     }
     }
   }
