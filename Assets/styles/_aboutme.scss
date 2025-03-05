@@ -11,8 +11,9 @@
     height: min-content;
 }
 @media screen and (min-width: 481px) and (max-width: 900px) {
-  max-height: 120vh;
-  min-height: 120vh;
+  max-height: min-content;
+  min-height: min-content;
+  
 }
 
 

@@ -39,6 +39,15 @@ html {
     overflow-x: hidden;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  html {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    margin: auto;
+    overflow-x: hidden;
+  }
+}
 
 .darkModeTheme {
   background-color: rgb(22, 22, 22);
@@ -523,8 +532,12 @@ header .header-right {
 }
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #aboutme {
-    max-height: 120vh;
-    min-height: 120vh;
+    max-height: -webkit-min-content;
+    max-height: -moz-min-content;
+    max-height: min-content;
+    min-height: -webkit-min-content;
+    min-height: -moz-min-content;
+    min-height: min-content;
   }
 }
 #aboutme .aboutmeContent {
