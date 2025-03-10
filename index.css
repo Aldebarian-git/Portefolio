@@ -2,25 +2,29 @@
   font-family: "Orelega";
   src: url(./Assets/fonts/Orelega_One/OrelegaOne-Regular.ttf);
 }
+
 @font-face {
   font-family: "Bricolage";
   src: url(./Assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Regular.ttf);
 }
+
 @font-face {
   font-family: "Open";
   src: url(./Assets/fonts/Open_Sans/static/OpenSans-Regular.ttf);
 }
+
 @font-face {
   font-family: "Rubik";
   src: url(./Assets/fonts/Rubik-Regular.ttf);
 }
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Rubik";
-  color: rgb(56, 56, 56);
+  color: #383838;
 }
 
 html {
@@ -30,6 +34,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 @media screen and (max-width: 480px) {
   html {
     width: -webkit-min-content;
@@ -39,6 +44,7 @@ html {
     overflow-x: hidden;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   html {
     width: 100%;
@@ -48,7 +54,7 @@ html {
 }
 
 .darkModeTheme {
-  background-color: rgb(22, 22, 22);
+  background-color: #161616;
   color: white;
 }
 
@@ -57,6 +63,7 @@ body {
   max-width: 1300px;
   margin: auto;
 }
+
 @media screen and (max-width: 480px) {
   body {
     width: -webkit-min-content;
@@ -66,6 +73,7 @@ body {
     overflow-x: hidden;
   }
 }
+
 body .logo-Dev-By-Flav {
   height: 130px;
   width: 130px;
@@ -77,21 +85,24 @@ body .logo-Dev-By-Flav {
   top: 15px;
   border-bottom-right-radius: 50%;
   border-top-right-radius: 50%;
-  background-color: rgb(243, 243, 243);
+  background-color: #f3f3f3;
   border: 2px solid orange;
   border-left: none;
   z-index: 1000;
 }
+
 @media screen and (max-width: 480px) {
   body .logo-Dev-By-Flav {
     display: none;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   body .logo-Dev-By-Flav {
     display: none;
   }
 }
+
 body .scroller {
   position: fixed;
   top: 0;
@@ -111,16 +122,19 @@ body .scroller {
   animation-range-start: cover 100px;
   animation-range-end: cover 100%;
 }
+
 @media screen and (max-width: 480px) {
   body .scroller {
     display: none;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   body .scroller {
     display: none;
   }
 }
+
 @-webkit-keyframes scroll {
   from {
     background-size: 0% 5px;
@@ -129,6 +143,7 @@ body .scroller {
     background-size: 100% 5px;
   }
 }
+
 @keyframes scroll {
   from {
     background-size: 0% 5px;
@@ -175,11 +190,13 @@ a {
   visibility: hidden;
   opacity: 0;
 }
+
 @media screen and (max-width: 480px) {
   #buttonUp {
     display: none;
   }
 }
+
 #buttonUp i {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,10 +216,11 @@ a {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+
 #buttonUp i:hover {
   color: orange;
   border: 1px solid orange;
-  background-color: rgb(243, 243, 243);
+  background-color: #f3f3f3;
   border-radius: 50%;
 }
 
@@ -212,6 +230,7 @@ a {
   background: url("./Assets/imgs/3.jpeg") center/cover no-repeat;
   background-attachment: fixed;
 }
+
 @media screen and (max-width: 480px) {
   .banner {
     margin: 10px 0;
@@ -238,7 +257,7 @@ a {
 .navbar {
   width: 100%;
   margin: auto;
-  background-color: rgb(243, 243, 243);
+  background-color: #f3f3f3;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,11 +272,13 @@ a {
   border-bottom: 1px solid orange;
   z-index: 1001;
 }
+
 @media screen and (max-width: 480px) {
   .navbar {
     display: none;
   }
 }
+
 .navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,17 +291,20 @@ a {
   font-family: "Rubik";
   font-weight: 500;
 }
+
 @media screen and (max-width: 480px) {
   .navbar ul {
     display: none;
   }
 }
+
 .navbar ul span {
   font-family: "Rubik";
   font-size: 16px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+
 .navbar ul .liContact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,9 +319,11 @@ a {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+
 .navbar ul .liContact i {
   font-size: 25px;
 }
+
 .navbar ul .liContact a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,18 +339,22 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 .navbar ul .liContact a:hover {
   color: orange;
 }
+
 .navbar ul .cadre {
   border: 1px solid orange;
   display: inline-block;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+
 .navbar ul .cadre:hover {
   border-radius: 10px;
 }
+
 .navbar .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -335,14 +365,17 @@ a {
           flex-direction: row;
   margin: 0 1rem;
 }
+
 @media screen and (max-width: 480px) {
   .navbar .contact {
     gap: 15px;
   }
 }
+
 .navbar .contact li {
   position: relative;
 }
+
 .navbar .contact li span {
   opacity: 0;
   visibility: hidden;
@@ -351,6 +384,7 @@ a {
   color: white;
   position: relative;
 }
+
 .navbar .contact li span::before {
   content: "";
   position: absolute;
@@ -364,14 +398,17 @@ a {
   -webkit-transition: opacity 0.5s ease, visibility 0.5s ease;
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
+
 .navbar .contact li span.show {
   opacity: 1;
   visibility: visible;
 }
+
 .navbar .contact li span.show::before {
   opacity: 1;
   visibility: visible;
 }
+
 .navbar .contact .after {
   position: absolute;
   bottom: -40px;
@@ -395,10 +432,12 @@ a {
   -webkit-transition: opacity 1s ease, visibility 1s ease;
   transition: opacity 1s ease, visibility 1s ease;
 }
+
 .navbar .contact .after.show {
   opacity: 1;
   visibility: visible;
 }
+
 .navbar .contact .after::before {
   content: "";
   position: absolute;
@@ -412,10 +451,12 @@ a {
   -webkit-transition: opacity 1s ease, visibility 1s ease;
   transition: opacity 1s ease, visibility 1s ease;
 }
+
 .navbar .contact .after.show::before {
   opacity: 1;
   visibility: visible;
 }
+
 .navbar .contact i {
   font-size: 25px;
   -webkit-transition: -webkit-transform 1s ease;
@@ -423,6 +464,7 @@ a {
   transition: transform 1s ease;
   transition: transform 1s ease, -webkit-transform 1s ease;
 }
+
 .navbar .contact i:hover {
   -webkit-transform: rotate(720deg);
           transform: rotate(720deg);
@@ -436,6 +478,7 @@ header {
   -webkit-transition: 1s ease;
   transition: 1s ease;
 }
+
 @media screen and (max-width: 480px) {
   header {
     height: -webkit-min-content;
@@ -443,11 +486,13 @@ header {
     height: min-content;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   header {
     height: 500px;
   }
 }
+
 header #headerContainer {
   height: 100%;
   margin: 0 auto;
@@ -461,6 +506,7 @@ header #headerContainer {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 @media screen and (max-width: 480px) {
   header #headerContainer {
     height: -webkit-min-content;
@@ -468,35 +514,43 @@ header #headerContainer {
     height: min-content;
   }
 }
+
 header #headerContainer .headerCadre {
   border: 2px solid white;
 }
+
 header .header-left {
-  background-color: rgb(255, 166, 0);
+  background-color: #ffa600;
   margin: 10px;
   padding: 10px;
 }
+
 header .header-left h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 900;
   font-size: 3rem;
   color: white;
 }
+
 header .header-left h2 {
   font-family: "Rubik", sans-serif;
   font-weight: 800;
   padding-bottom: 1rem;
   position: relative;
 }
+
 header .header-left p {
   margin: 0.5rem 0;
 }
+
 header .header-left i {
   color: white;
 }
+
 header .header-left span {
   color: white;
 }
+
 header .header-right {
   height: 70%;
   border-radius: 50px 50px 50px 50px;
@@ -521,6 +575,7 @@ header .header-right {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 @media screen and (max-width: 480px) {
   #aboutme {
     height: -webkit-min-content;
@@ -528,6 +583,7 @@ header .header-right {
     height: min-content;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #aboutme {
     height: -webkit-min-content;
@@ -535,11 +591,15 @@ header .header-right {
     height: min-content;
   }
 }
+
 #aboutme .aboutmeContent {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 60% 40%;
-  background-color: rgb(243, 243, 243);
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  background-color: #f3f3f3;
 }
+
 @media screen and (max-width: 480px) {
   #aboutme .aboutmeContent {
     display: -webkit-box;
@@ -551,6 +611,7 @@ header .header-right {
             flex-direction: column;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #aboutme .aboutmeContent {
     display: -webkit-box;
@@ -562,6 +623,7 @@ header .header-right {
             flex-direction: column;
   }
 }
+
 #aboutme .aboutmeContent .aboutmeCadre {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -585,6 +647,7 @@ header .header-right {
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
 }
+
 #aboutme .aboutmeContent .aboutmeLeft {
   text-align: justify;
   display: -webkit-box;
@@ -604,18 +667,22 @@ header .header-right {
           transform: translateX(-200%);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  display: -ms-grid;
   display: grid;
 }
+
 @media screen and (max-width: 480px) {
   #aboutme .aboutmeContent .aboutmeLeft {
     gap: 15px;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #aboutme .aboutmeContent .aboutmeLeft {
     gap: 15px;
   }
 }
+
 #aboutme .aboutmeContent .aboutmeLeft p {
   padding: 20px 30px;
   display: -webkit-box;
@@ -627,10 +694,12 @@ header .header-right {
   transition: max-height 0.5s ease-in-out;
   max-height: 100px;
 }
+
 #aboutme .aboutmeContent .aboutmeLeft .aboutme-infos.expanded {
   -webkit-line-clamp: unset;
   max-height: 700px;
 }
+
 #aboutme .aboutmeContent .aboutmeLeft .cadre {
   border: 1px solid orange;
   display: -webkit-box;
@@ -646,9 +715,11 @@ header .header-right {
           justify-content: center;
   margin: 0 auto;
 }
+
 #aboutme .aboutmeContent .aboutmeLeft .cadre:hover {
   border-radius: 10px;
 }
+
 #aboutme .aboutmeContent .aboutmeLeft #see-more-btn {
   display: block;
   text-transform: uppercase;
@@ -662,11 +733,13 @@ header .header-right {
   cursor: pointer;
   margin: 5px;
 }
+
 #aboutme .aboutmeContent .aboutmeLeft #see-more-btn:hover {
-  background-color: rgb(243, 243, 243);
+  background-color: #f3f3f3;
   color: orange;
   cursor: pointer;
 }
+
 #aboutme .aboutmeContent .aboutmeRight {
   background: url(./Assets/imgs/flavien2.png) no-repeat;
   background-size: cover;
@@ -688,11 +761,13 @@ header .header-right {
   -webkit-transition: border-radius 1s ease, opacity 0.5s;
   transition: border-radius 1s ease, opacity 0.5s;
 }
+
 @media screen and (max-width: 480px) {
   #aboutme .aboutmeContent .aboutmeRight {
     height: 499px;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #aboutme .aboutmeContent .aboutmeRight {
     height: 499px;
@@ -700,6 +775,7 @@ header .header-right {
     margin: 0 auto;
   }
 }
+
 #aboutme .aboutme-title {
   font-family: "Rubik";
   font-weight: 100;
@@ -716,10 +792,11 @@ header .header-right {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
+
 #aboutme .aboutme-title::before {
   content: "";
   position: absolute;
-  border-top: 26px solid rgb(255, 166, 0);
+  border-top: 26px solid #ffa600;
   width: 3px;
   top: 0;
   left: 0;
@@ -741,6 +818,7 @@ header .header-right {
   max-width: 1200px;
   height: 50vh;
 }
+
 @media screen and (max-width: 480px) {
   #skill {
     height: -webkit-min-content;
@@ -753,6 +831,7 @@ header .header-right {
     margin: auto;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #skill {
     height: -webkit-min-content;
@@ -772,16 +851,19 @@ header .header-right {
   width: 50%;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 480px) {
   #hardSkill {
     width: 100%;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #hardSkill {
     width: 100%;
   }
 }
+
 #hardSkill .hardSkill-title {
   font-family: "Rubik";
   font-weight: 100;
@@ -794,36 +876,46 @@ header .header-right {
   margin: 0 30px;
   padding: 0 10px;
 }
+
 #hardSkill .hardSkill-title::before {
   content: "";
   position: absolute;
-  border-top: 26px solid rgb(255, 166, 0);
+  border-top: 26px solid #ffa600;
   width: 3px;
   top: 0;
   left: 0;
 }
+
 #hardSkill h3 {
   font-family: "Rubik";
 }
+
 #hardSkill #stacksContainer {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
   max-width: 500px;
   margin: 24px auto;
 }
+
 @media screen and (max-width: 480px) {
   #hardSkill #stacksContainer {
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #hardSkill #stacksContainer {
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
+
 #hardSkill #stacksContainer div {
   border: 1px solid orange;
   display: -webkit-box;
@@ -845,9 +937,11 @@ header .header-right {
           box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.151);
   background-color: white;
 }
+
 #hardSkill #stacksContainer span {
   margin: 0.5rem 0;
 }
+
 #hardSkill img {
   height: 100%;
   max-height: 80px;
@@ -860,16 +954,19 @@ header .header-right {
   width: 50%;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 480px) {
   #softSkill {
     width: 100%;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #softSkill {
     width: 100%;
   }
 }
+
 #softSkill .softSkill-title {
   font-family: "Rubik";
   font-weight: 100;
@@ -882,33 +979,42 @@ header .header-right {
   margin: 0 30px;
   padding: 0 10px;
 }
+
 #softSkill .softSkill-title::before {
   content: "";
   position: absolute;
-  border-top: 26px solid rgb(255, 166, 0);
+  border-top: 26px solid #ffa600;
   width: 3px;
   top: 0;
   left: 0;
 }
+
 #softSkill #softSkillContainer {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
   max-width: 500px;
   margin: 24px auto;
 }
+
 @media screen and (max-width: 480px) {
   #softSkill #softSkillContainer {
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #softSkill #softSkillContainer {
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
+
 #softSkill #softSkillContainer div {
   border: 1px solid orange;
   display: -webkit-box;
@@ -930,14 +1036,17 @@ header .header-right {
           box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.151);
   background-color: white;
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #softSkill #softSkillContainer div {
     max-width: 150px;
   }
 }
+
 #softSkill #softSkillContainer span {
   margin: 0.5rem 0;
 }
+
 #softSkill img {
   height: 100%;
   max-height: 80px;
@@ -954,6 +1063,7 @@ header .header-right {
   position: relative;
   scroll-margin-top: 120px;
 }
+
 #projets .beforeCadre {
   background-color: orange;
   -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
@@ -962,6 +1072,7 @@ header .header-right {
   width: 100%;
   margin-bottom: -1px;
 }
+
 #projets .afterCadre {
   background-color: orange;
   -webkit-clip-path: polygon(100% 100%, 0 0, 100% 0);
@@ -970,6 +1081,7 @@ header .header-right {
   width: 100%;
   margin-top: -1px;
 }
+
 #projets .filters {
   height: 100%;
   width: 100%;
@@ -978,22 +1090,26 @@ header .header-right {
   transition: 0.9s ease;
   background-color: rgba(0, 0, 0, 0.616);
 }
+
 #projets .projets-title-container {
   width: 80%;
   max-width: 1200px;
   margin: 0.9rem auto;
   scroll-margin-top: 120px;
 }
+
 @media screen and (max-width: 480px) {
   #projets .projets-title-container {
     width: 100%;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #projets .projets-title-container {
     width: 100%;
   }
 }
+
 #projets .mesProjets-title {
   font-family: "Rubik";
   font-weight: 100;
@@ -1006,14 +1122,16 @@ header .header-right {
   margin: 0 30px;
   padding: 0 10px;
 }
+
 #projets .mesProjets-title::before {
   content: "";
   position: absolute;
-  border-top: 26px solid rgb(255, 166, 0);
+  border-top: 26px solid #ffa600;
   width: 3px;
   top: 0;
   left: 0;
 }
+
 #projets .container-projets {
   border: none;
   height: -webkit-min-content;
@@ -1022,22 +1140,29 @@ header .header-right {
   width: 100%;
   margin: 0 auto;
   padding: 2vh 3vw;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   background-color: orange;
 }
+
 @media screen and (max-width: 480px) {
   #projets .container-projets {
-    grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #projets .container-projets {
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
+
 #projets .container-projets .newProjet {
   height: 350px;
   width: 350px;
@@ -1048,6 +1173,7 @@ header .header-right {
   overflow: hidden;
   position: relative;
 }
+
 #projets .container-projets h3 {
   font-family: "Rubik";
   font-size: 16px;
@@ -1063,6 +1189,7 @@ header .header-right {
   text-transform: uppercase;
   font-weight: 100;
 }
+
 #projets .container-projets a {
   text-align: right;
   text-transform: uppercase;
@@ -1070,6 +1197,7 @@ header .header-right {
   font-family: "Rubik";
   margin: 5px;
 }
+
 #projets .container-projets p {
   color: white;
   font-weight: 100;
@@ -1079,6 +1207,7 @@ header .header-right {
   margin: 5px;
   text-align: center;
 }
+
 #projets .container-projets .projetCadreTop {
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -1098,6 +1227,7 @@ header .header-right {
   opacity: 0;
   z-index: 1000;
 }
+
 #projets .container-projets .projetCadreBottom {
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -1115,10 +1245,12 @@ header .header-right {
   opacity: 0;
   z-index: 1000;
 }
+
 #projets .cadre {
   border: 1px solid orange;
   display: inline-block;
 }
+
 #projets .button-projet {
   text-align: center;
   padding: 1rem 0;
@@ -1132,6 +1264,7 @@ header .header-right {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 #projets .button-projet a {
   display: block;
   text-transform: uppercase;
@@ -1143,8 +1276,9 @@ header .header-right {
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
 }
+
 #projets .button-projet a:hover {
-  background-color: rgb(243, 243, 243);
+  background-color: #f3f3f3;
   color: orange;
 }
 
@@ -1154,6 +1288,7 @@ header .header-right {
   position: relative;
   scroll-margin-top: 120px;
 }
+
 @media screen and (max-width: 480px) {
   #experience {
     width: 100%;
@@ -1162,11 +1297,13 @@ header .header-right {
     height: min-content;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 900px) {
   #experience {
     width: 100%;
   }
 }
+
 #experience h2:first-child {
   text-align: center;
   font-family: "Rubik";
@@ -1174,6 +1311,7 @@ header .header-right {
   margin: 3rem 0;
   position: relative;
 }
+
 #experience h2:first-child::after {
   content: "";
   position: absolute;
@@ -1185,6 +1323,7 @@ header .header-right {
           transform: translateX(-82%);
   z-index: -1;
 }
+
 #experience .line-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1197,14 +1336,17 @@ header .header-right {
       -ms-flex-align: center;
           align-items: center;
 }
+
 @media screen and (max-width: 480px) {
   #experience .line-container {
     gap: 15px;
   }
 }
+
 #experience .line-container i {
   padding: 0;
 }
+
 #experience .line-container #box1 {
   height: 150px;
   width: 40%;
@@ -1229,6 +1371,7 @@ header .header-right {
   padding: 1rem 3rem;
   z-index: -1;
 }
+
 @media screen and (max-width: 480px) {
   #experience .line-container #box1 {
     width: 100%;
@@ -1238,6 +1381,7 @@ header .header-right {
             transform: translateX(0);
   }
 }
+
 #experience .line-container #box1::after {
   content: "";
   position: absolute;
@@ -1248,30 +1392,36 @@ header .header-right {
   top: 50%;
   left: 9px;
 }
+
 @media screen and (max-width: 480px) {
   #experience .line-container #box1::after {
     display: none;
   }
 }
+
 #experience .line-container #box1 h2 {
   font-family: "Open";
   font-size: 16px;
   white-space: nowrap;
 }
+
 #experience .line-container #box1 h3 {
   font-family: "Open";
   color: orange;
   white-space: nowrap;
   font-size: 14px;
 }
+
 #experience .line-container #box1 p {
   font-family: "Bricolage";
 }
+
 #experience .line-container #box1 .icone {
   position: absolute;
   top: 15px;
   right: 15px;
 }
+
 #experience .line-container #box2 {
   height: 150px;
   width: 40%;
@@ -1296,6 +1446,7 @@ header .header-right {
   padding: 1rem 3rem;
   z-index: -1;
 }
+
 @media screen and (max-width: 480px) {
   #experience .line-container #box2 {
     width: 100%;
@@ -1305,6 +1456,7 @@ header .header-right {
             transform: translateX(0);
   }
 }
+
 #experience .line-container #box2::after {
   content: "";
   position: absolute;
@@ -1315,30 +1467,36 @@ header .header-right {
   top: 50%;
   right: 9px;
 }
+
 @media screen and (max-width: 480px) {
   #experience .line-container #box2::after {
     display: none;
   }
 }
+
 #experience .line-container #box2 h2 {
   font-family: "Rubik";
   font-size: 16px;
   white-space: nowrap;
 }
+
 #experience .line-container #box2 h3 {
   font-family: "Rubik";
   color: orange;
   white-space: nowrap;
   font-size: 14px;
 }
+
 #experience .line-container #box2 p {
   font-family: "Rubik";
 }
+
 #experience .line-container #box2 .icone {
   position: absolute;
   top: 15px;
   left: 15px;
 }
+
 #experience .line-container #box3 {
   height: 150px;
   width: 40%;
@@ -1363,6 +1521,7 @@ header .header-right {
   padding: 1rem 3rem;
   z-index: -1;
 }
+
 @media screen and (max-width: 480px) {
   #experience .line-container #box3 {
     width: 100%;
@@ -1372,6 +1531,7 @@ header .header-right {
             transform: translateX(0);
   }
 }
+
 #experience .line-container #box3::after {
   content: "";
   position: absolute;
@@ -1382,30 +1542,36 @@ header .header-right {
   top: 50%;
   left: 9px;
 }
+
 @media screen and (max-width: 480px) {
   #experience .line-container #box3::after {
     display: none;
   }
 }
+
 #experience .line-container #box3 h2 {
   font-family: "Rubik";
   font-size: 16px;
   white-space: nowrap;
 }
+
 #experience .line-container #box3 h3 {
   font-family: "Rubik";
   color: orange;
   white-space: nowrap;
   font-size: 14px;
 }
+
 #experience .line-container #box3 p {
   font-family: "Rubik";
 }
+
 #experience .line-container #box3 .icone {
   position: absolute;
   top: 15px;
   right: 15px;
 }
+
 #experience .line-container #box4 {
   height: 150px;
   width: 40%;
@@ -1430,6 +1596,7 @@ header .header-right {
   padding: 1rem 3rem;
   z-index: -1;
 }
+
 @media screen and (max-width: 480px) {
   #experience .line-container #box4 {
     width: 100%;
@@ -1439,6 +1606,7 @@ header .header-right {
             transform: translateX(0);
   }
 }
+
 #experience .line-container #box4::after {
   content: "";
   position: absolute;
@@ -1449,30 +1617,36 @@ header .header-right {
   top: 50%;
   right: 9px;
 }
+
 @media screen and (max-width: 480px) {
   #experience .line-container #box4::after {
     display: none;
   }
 }
+
 #experience .line-container #box4 h2 {
   font-family: "Rubik";
   font-size: 16px;
   white-space: nowrap;
 }
+
 #experience .line-container #box4 h3 {
   font-family: "Rubik";
   color: orange;
   white-space: nowrap;
   font-size: 14px;
 }
+
 #experience .line-container #box4 p {
   font-family: "Rubik";
 }
+
 #experience .line-container #box4 .icone {
   position: absolute;
   top: 15px;
   left: 15px;
 }
+
 #experience .arrow-up {
   position: relative;
   display: inline-block;
@@ -1482,11 +1656,13 @@ header .header-right {
   border-right: 10px solid transparent;
   border-bottom: 20px solid black;
 }
+
 @media screen and (max-width: 480px) {
   #experience .arrow-up {
     display: none;
   }
 }
+
 #experience .line {
   position: relative;
   display: inline-block;
@@ -1494,6 +1670,7 @@ header .header-right {
   height: 800px;
   background-color: black;
 }
+
 @media screen and (max-width: 480px) {
   #experience .line {
     display: none;
@@ -1504,8 +1681,10 @@ header .header-right {
   width: 90%;
   max-width: 1200px;
   height: 500px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 50% 50%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
   margin: 4rem auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1515,6 +1694,7 @@ header .header-right {
           align-items: center;
   position: relative;
 }
+
 @media screen and (max-width: 480px) {
   #game {
     display: -webkit-box;
@@ -1528,11 +1708,13 @@ header .header-right {
     height: 500px;
   }
 }
+
 #game .score {
   color: #ffa500;
   font-size: 4rem;
   font-family: "Rubik";
 }
+
 #game .gamebox {
   background-color: white;
   width: 70%;
@@ -1544,11 +1726,13 @@ header .header-right {
   border: 1px solid orange;
   border-radius: 50px;
 }
+
 @media screen and (max-width: 480px) {
   #game .gamebox {
     width: 90%;
   }
 }
+
 #game .gamebox .bubble {
   position: absolute;
   border-radius: 300px;
@@ -1559,6 +1743,7 @@ header .header-right {
   -webkit-filter: hue-rotate(-30deg);
           filter: hue-rotate(-30deg);
 }
+
 @-webkit-keyframes bubble {
   to {
     top: -150px;
@@ -1568,6 +1753,7 @@ header .header-right {
             filter: hue-rotate(-31deg);
   }
 }
+
 @keyframes bubble {
   to {
     top: -150px;
@@ -1577,6 +1763,7 @@ header .header-right {
             filter: hue-rotate(-31deg);
   }
 }
+
 #game .rules {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1593,19 +1780,23 @@ header .header-right {
           justify-content: space-between;
   gap: 1rem;
 }
+
 #game .rules h2 {
   font-family: "Rubik";
   font-weight: 100;
 }
+
 #game .rules h2 span {
   font-family: "Rubik";
   font-size: 3rem;
   color: orange;
 }
+
 #game .rules h3 {
   font-family: "Rubik";
   font-weight: 100;
 }
+
 #game .arrow-orange {
   background: url(./Assets/imgs/arrow.png) center/contain no-repeat;
   height: 100px;
@@ -1614,6 +1805,7 @@ header .header-right {
   top: 90px;
   left: 45%;
 }
+
 @media screen and (max-width: 480px) {
   #game .arrow-orange {
     display: none;
@@ -1635,10 +1827,12 @@ header .header-right {
           justify-content: center;
   overflow: hidden;
 }
+
 #slogan h3 {
   font-weight: 100;
   font-size: 2rem;
 }
+
 @media screen and (max-width: 480px) {
   #slogan h3 {
     font-size: 1.5rem;
@@ -1652,11 +1846,13 @@ header .header-right {
   margin-left: 1rem;
   position: relative;
 }
+
 #target span {
   font-size: 2rem;
   font-family: "Rubik";
   font-weight: 100;
 }
+
 @media screen and (max-width: 480px) {
   #target span {
     font-size: 1.5rem;
@@ -1694,6 +1890,7 @@ header .header-right {
     opacity: 1;
   }
 }
+
 #side-bar {
   display: none;
 }
@@ -1703,7 +1900,7 @@ header .header-right {
     position: fixed;
     width: 230px;
     height: 100vh;
-    background: rgb(243, 243, 243);
+    background: #f3f3f3;
     top: 0;
     right: -230px;
     -webkit-transition: 0.5s ease-out;
@@ -1762,7 +1959,7 @@ header .header-right {
     width: 60px;
     height: 10px;
     border-radius: 5px;
-    background: rgb(243, 243, 243);
+    background: #f3f3f3;
     border: 1px solid orange;
     display: block;
     margin-top: 0;
@@ -1793,4 +1990,5 @@ header .header-right {
   .contact-2 {
     gap: 10px;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */

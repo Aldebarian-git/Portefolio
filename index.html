@@ -1,81 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Flavien GUILLON, développeur web FullStack basé dans les Landes, France. Découvrez mes projets et compétences en développement web." />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
   <link rel="icon" type="image/png" href="./Assets/imgs/favicon.ico" />
 
   <link rel="stylesheet" href="index.css" />
 
-  <title>Flavien.G - Portefolio</title>
+  <title>Flavien.G - Portfolio</title>
 </head>
 
 <body>
-  <div id="side-bar">
-    <div class="toggle-btn" id="btn">
+  <nav id="side-bar" aria-label="Menu de navigation mobile">
+    <button class="toggle-btn" id="btn" aria-label="Ouvrir/Fermer le menu">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
 
     <ul class="burger-links">
-
       <li class="liContact">
-        <a href="#aboutme"><i class="uil uil-user"></i>À propos de moi</a>
+        <a href="#aboutme" aria-label="À propos de moi">
+          <i class="uil uil-user" aria-hidden="true"></i>À propos de moi
+        </a>
       </li>
       <li class="liContact">
-        <a href="#skill"><i class="uil uil-desktop"></i>Compétences</a>
+        <a href="#skill" aria-label="Mes compétences">
+          <i class="uil uil-desktop" aria-hidden="true"></i>Compétences
+        </a>
       </li>
       <li class="liContact">
-        <a href="#projets"><i class="uil uil-suitcase"></i>Projets</a>
+        <a href="#projets" aria-label="Mes projets">
+          <i class="uil uil-suitcase" aria-hidden="true"></i>Projets
+        </a>
       </li>
       <li class="liContact">
-        <a href="#experience"><i class="uil uil-file-info-alt"></i>Experience</a>
-      </li>
-    </br>
-      <li class="liContact">
-        <a href="https://www.linkedin.com/in/flavien-guillon-2a031934b/" target="_blank"><i
-            class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
+        <a href="#experience" aria-label="Mon expérience">
+          <i class="uil uil-file-info-alt" aria-hidden="true"></i>Experience
+        </a>
       </li>
       <li class="liContact">
-        <a href="https://github.com/Aldebarian-git" target="_blank"><i class="fa-brands fa-github"></i>Mon GitHub</a>
+        <a href="https://www.linkedin.com/in/flavien-guillon-2a031934b/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           aria-label="Visitez mon profil LinkedIn">
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>LinkedIn
+        </a>
       </li>
       <li class="liContact">
-        <a href="tel:+33683783086"> <i class="fa-solid fa-phone"></i>Téléphone</a>
+        <a href="https://github.com/Aldebarian-git" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           aria-label="Visitez mon profil GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>Mon GitHub
+        </a>
       </li>
       <li class="liContact">
-        <a href="mailto:flavien.guillonfr@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i>Mail</a>
+        <a href="tel:+33683783086" aria-label="Appelez-moi au 06 83 78 30 86">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>Téléphone
+        </a>
       </li>
       <li class="liContact">
-        <a href="./Assets/imgs/CV Flavien-GUILLON 21_02_2025.pdf" id="dlcv" download="CV Flavien-GUILLON PDF"><i
-            class="fa-solid fa-download"></i>Télécharger mon CV</a>
-
+        <a href="mailto:flavien.guillonfr@gmail.com" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           aria-label="Envoyez-moi un email">
+          <i class="fa-regular fa-envelope" aria-hidden="true"></i>Mail
+        </a>
+      </li>
+      <li class="liContact">
+        <a href="./Assets/imgs/CV Flavien-GUILLON 21_02_2025.pdf" 
+           id="dlcv" 
+           download="CV Flavien-GUILLON PDF" 
+           aria-label="Télécharger mon CV">
+          <i class="fa-solid fa-download" aria-hidden="true"></i>Télécharger mon CV
+        </a>
       </li>      
     </ul>
-
-
-  </div>
-  <div class="scroller"></div>
-  <div class="logo-Dev-By-Flav"></div>
-  <div id="buttonUp">
-    <a href="#headerContainer"><i class="fa-solid fa-arrow-up"></i></a>
-  </div>
-  <div class="navbar" id="navBar">
+  </nav>
+  <div class="scroller" role="progressbar" aria-label="Progression de la page"></div>
+  <div class="logo-Dev-By-Flav" role="img" aria-label="Logo Dev By Flav"></div>
+  <a href="#headerContainer" id="buttonUp" aria-label="Retour en haut de la page">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </a>
+  <nav class="navbar" id="navBar" aria-label="Menu de navigation principal">
     <ul>
       <li class="liContact">
-        <a href="#aboutme"><i class="uil uil-user"></i>À propos de moi</a>
+        <a href="#aboutme" aria-label="À propos de moi">
+          <i class="uil uil-user" aria-hidden="true"></i>À propos de moi
+        </a>
       </li>
       <li class="liContact">
-        <a href="#skill"><i class="uil uil-desktop"></i>Compétences</a>
+        <a href="#skill" aria-label="Mes compétences">
+          <i class="uil uil-desktop" aria-hidden="true"></i>Compétences
+        </a>
       </li>
       <li class="liContact">
-        <a href="#projets"><i class="uil uil-suitcase"></i>Projets</a>
+        <a href="#projets" aria-label="Mes projets">
+          <i class="uil uil-suitcase" aria-hidden="true"></i>Projets
+        </a>
       </li>
       <li class="liContact">
-        <a href="#experience"><i class="uil uil-file-info-alt"></i>Experience</a>
+        <a href="#experience" aria-label="Mon expérience">
+          <i class="uil uil-file-info-alt" aria-hidden="true"></i>Experience
+        </a>
       </li>
       <li>
         <div class="cadre"></div>
@@ -83,170 +115,200 @@
     </ul>
     <div class="contact">
       <li class="liafter">
-        <a href="https://www.linkedin.com/in/flavien-guillon-2a031934b/" target="_blank"><i
-            class="fa-brands fa-linkedin-in"></i></a><span class="after">RETROUVEZ-MOI SUR LINKEDIN</span>
+        <a href="https://www.linkedin.com/in/flavien-guillon-2a031934b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a><span class="after">RETROUVEZ-MOI SUR LINKEDIN</span>
       </li>
 
       <li class="liafter">
-        <a href="mailto:flavien.guillonfr@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a><span
+        <a href="mailto:flavien.guillonfr@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Mail">
+          <i class="fa-regular fa-envelope" aria-hidden="true"></i></a><span
           class="after">CONTACTEZ-MOI</span>
       </li>
       <li class="liafter">
-        <a href="https://github.com/Aldebarian-git" target="_blank"><i class="fa-brands fa-github"></i></a><span
+        <a href="https://github.com/Aldebarian-git" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i></a><span
           class="after">RETROUVER-MOI SUR GITHUB</span>
       </li>
       <li class="liafter">
-        <a href="tel:+33683783086"> <i class="fa-solid fa-phone"></i></a>
+        <a href="tel:+33683783086" aria-label="Téléphone">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i></a>
         <span class="after">06 83 78 30 86</span>
       </li>
       <li class="liafter">
-        <a href="./Assets/imgs/CV Flavien-GUILLON 21_02_2025.pdf" id="dlcv" download="CV Flavien-GUILLON PDF"><i
-            class="fa-solid fa-download"></i></a>
+        <a href="./Assets/imgs/CV Flavien-GUILLON 21_02_2025.pdf" id="dlcv" download="CV Flavien-GUILLON PDF" aria-label="Télécharger mon CV">
+          <i class="fa-solid fa-download" aria-hidden="true"></i></a>
         <span class="after">Télécharger mon CV</span>
       </li>
     </div>
-  </div>
+  </nav>
 
-  <header>
-    <div id="headerContainer">
-      <div class="headerCadre">
-        <div class="header-left">
-          <h1>Flavien GUILLON</h1>
-          <h2>Développeur Web FullStack</h2>
-          <p>
-            Jeune web developper, je suis à la recherche d'une nouvelle
-            aventure professionnelle!
+  <main>
+    <header>
+      <div id="headerContainer">
+        <div class="headerCadre">
+          <div class="header-left">
+            <h1>Flavien GUILLON</h1>
+            <h2>Développeur Web FullStack</h2>
+            <p>
+              Jeune web developper, je suis à la recherche d'une nouvelle
+              aventure professionnelle!
+            </p>
+            <address>
+              <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> France, Landes</span>
+              <span><i class="fa-solid fa-globe" aria-hidden="true"></i> Ouvert à la mobilité</span>
+            </address>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="aboutme">
+      <div class="aboutmeContent">
+        <div class="aboutmeLeft">
+          <h2 class="aboutme-title">À propos de moi</h2>
+          <p class="aboutme-infos">
+            Bonjour, Je m'appelle Flavien, j'ai 34 ans et je suis nouvellement
+            développeur web. Après 10 ans dans le monde de la logistique, j'ai
+            enfin écouté la petite voix dans ma tête pour entamer une
+            reconversion professionnelle.<br /><br />
+
+            J'adore le développement web, et j'accorde une importance toute
+            particulière à l'expérience utilisateur, qui, pour moi, est
+            primordiale. Donner vie à des idées est une véritable passion :
+            transformer une simple vision en une application fonctionnelle et
+            intuitive me procure une immense satisfaction.<br /><br />
+
+            Curieux de nature, j'aime apprendre, et l'informatique est un
+            terrain de jeu parfait pour cela. Je peux passer des heures à coder
+            sans m'en rendre compte.<br /><br />
+
+            Mon expérience passée en tant que responsable m'a également permis
+            d'acquérir des compétences solides en gestion d'équipe, et de
+            travailler dans un esprit d'entraide, toujours orienté vers un
+            objectif commun. Chaque projet est pour moi une opportunité de
+            relever de nouveaux défis, de grandir et de créer des solutions qui
+            font la différence.
           </p>
-          <span><i class="fa-solid fa-location-dot"></i> France, Landes</span>
-          <span><i class="fa-solid fa-globe"></i> Ouvert à la mobilité</span>
+          <div class="cadre">
+            <button id="see-more-btn">Voir plus</button>
+          </div>
+
+          <div id="slogan">
+            <h3>Je suis un</h3>
+            <h3 id="target"></h3>
+          </div>
+        </div>
+        <div class="aboutmeCadre">
+          <div class="aboutmeRight"></div>
         </div>
       </div>
-    </div>
-  </header>
+    </section>
 
-  <section id="aboutme">
-    <div class="aboutmeContent">
-      <div class="aboutmeLeft">
-        <h2 class="aboutme-title">À propos de moi</h2>
-        <p class="aboutme-infos">
-          Bonjour, Je m’appelle Flavien, j’ai 34 ans et je suis nouvellement
-          développeur web. Après 10 ans dans le monde de la logistique, j'ai
-          enfin écouté la petite voix dans ma tête pour entamer une
-          reconversion professionnelle.<br /><br />
+    <div class="banner"></div>
 
-          J’adore le développement web, et j’accorde une importance toute
-          particulière à l’expérience utilisateur, qui, pour moi, est
-          primordiale. Donner vie à des idées est une véritable passion :
-          transformer une simple vision en une application fonctionnelle et
-          intuitive me procure une immense satisfaction.<br /><br />
-
-          Curieux de nature, j’aime apprendre, et l’informatique est un
-          terrain de jeu parfait pour cela. Je peux passer des heures à coder
-          sans m’en rendre compte.<br /><br />
-
-          Mon expérience passée en tant que responsable m’a également permis
-          d’acquérir des compétences solides en gestion d’équipe, et de
-          travailler dans un esprit d’entraide, toujours orienté vers un
-          objectif commun. Chaque projet est pour moi une opportunité de
-          relever de nouveaux défis, de grandir et de créer des solutions qui
-          font la différence.
-        </p>
-        <div class="cadre">
-          <button id="see-more-btn">Voir plus</button>
-        </div>
-
-        <div id="slogan">
-          <h3>Je suis un</h3>
-          <h3 id="target"></h3>
-        </div>
+    <section id="skill">
+      <div id="hardSkill">
+        <h2 class="hardSkill-title">HardSkill</h2>
+        <div id="stacksContainer"></div>
       </div>
-      <div class="aboutmeCadre">
-        <div class="aboutmeRight"></div>
+
+      <div id="softSkill">
+        <h2 class="softSkill-title">SoftSkill</h2>
+        <div id="softSkillContainer"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="banner"></div>
-
-  <section id="skill">
-    <div id="hardSkill">
-      <h2 class="hardSkill-title">HardSkill</h2>
-      <div id="stacksContainer"></div>
-    </div>
-
-    <div id="softSkill">
-      <h2 class="softSkill-title">SoftSkill</h2>
-      <div id="softSkillContainer"></div>
-    </div>
-  </section>
-
-  <section id="projets">
-    <div class="projets-title-container">
+    <section id="projets">
       <h2 class="mesProjets-title">Mes projets</h2>
-    </div>
-    <div class="beforeCadre"></div>
-    <div class="container-projets"></div>
-    <div class="afterCadre"></div>
-    <div class="button-projet">
-      <div class="cadre">
-        <a href="#">Voir plus de projets</a>
+      <div class="beforeCadre"></div>
+      <div class="container-projets" role="list">
+        <!-- Les projets devraient être encapsulés dans des articles -->
       </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <h2>Mon expérience</h2>
-    <div class="line-container reveal-1">
-      <div class="arrow-up"></div>
-      <div class="line"></div>
-      <div class="box" id="box1">
-        <div class="icone"><i class="fa-solid fa-graduation-cap"></i></div>
-        <h3>Juin 2025 - Aout 2025</h3>
-        <h2>Stage en entreprise</h2>
-        <p>En téléprésentiel</p>
-        <span><i class="fa-solid fa-location-dot"></i> France, Landes</span>
+      <div class="afterCadre"></div>
+      <div class="button-projet">
+        <div class="cadre">
+          <a href="#" aria-label="Voir plus de projets">Voir plus de projets</a>
+        </div>
       </div>
-      <div class="box" id="box2">
-        <div class="icone"><i class="fa-solid fa-graduation-cap"></i></div>
-        <h3>Novembre 2024 - Aout 2025</h3>
-        <h2>Formation Développeur Web FullStack</h2>
-        <p>En téléprésentiel</p>
-        <span><i class="fa-solid fa-location-dot"></i> France, Landes</span>
+    </section>
+
+    <section id="experience">
+      <h2>Mon expérience</h2>
+      <div class="line-container reveal-1">
+        <div class="arrow-up"></div>
+        <div class="line"></div>
+        <div class="box" id="box1">
+          <div class="icone"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Juin 2025 - Aout 2025</h3>
+          <h2>Stage en entreprise</h2>
+          <p>En téléprésentiel</p>
+          <span><i class="fa-solid fa-location-dot"></i> France, Landes</span>
+        </div>
+        <div class="box" id="box2">
+          <div class="icone"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Novembre 2024 - Aout 2025</h3>
+          <h2>Formation Développeur Web FullStack</h2>
+          <p>En téléprésentiel</p>
+          <span><i class="fa-solid fa-location-dot"></i> France, Landes</span>
+        </div>
+        <div class="box" id="box3">
+          <div class="icone"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>Janvier 2020 - Novembre 2025</h3>
+          <h2>Technicien Supérieur Hospitalier</h2>
+          <p>Management de 26 personnes<br />Gestion des flux logistiques</p>
+          <span><i class="fa-solid fa-location-dot"></i> France, Toulouse</span>
+        </div>
+        <div class="box" id="box4">
+          <div class="icone"><i class="fa-solid fa-briefcase"></i></div>
+          <h3>Septembre 2019 - Janvier 2020</h3>
+          <h2>Chef d'équipe</h2>
+          <p>Animation de 10 personnes<br />Gestion des flux logistiques</p>
+          <span><i class="fa-solid fa-location-dot"></i> France, Toulouse</span>
+        </div>
       </div>
-      <div class="box" id="box3">
-        <div class="icone"><i class="fa-solid fa-briefcase"></i></div>
-        <h3>Janvier 2020 - Novembre 2025</h3>
-        <h2>Technicien Supérieur Hospitalier</h2>
-        <p>Management de 26 personnes<br />Gestion des flux logistiques</p>
-        <span><i class="fa-solid fa-location-dot"></i> France, Toulouse</span>
+    </section>
+
+    <section id="game" aria-label="Section mini-jeu">
+      <div class="gamebox">
+        <div class="bubble" role="button" aria-label="Bulle de jeu"></div>
       </div>
-      <div class="box" id="box4">
-        <div class="icone"><i class="fa-solid fa-briefcase"></i></div>
-        <h3>Septembre 2019 - Janvier 2020</h3>
-        <h2>Chef d'équipe</h2>
-        <p>Animation de 10 personnes<br />Gestion des flux logistiques</p>
-        <span><i class="fa-solid fa-location-dot"></i> France, Toulouse</span>
+
+      <div class="rules">
+        <h2>Encore là <span>?</span> Envie de jouer <span>?</span></h2>
+        <p>Mon record ? Ahah : 800 ZzzZzz...</p>
+        <h3>Ton score : <span class="score" aria-live="polite">0</span></h3>
       </div>
+      <div class="arrow-orange" role="img" aria-label="Flèche décorative"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Flavien GUILLON. Tous droits réservés.</p>
+      <nav aria-label="Liens sociaux">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/flavien-guillon-2a031934b/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Aldebarian-git" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               aria-label="GitHub">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </section>
+  </footer>
 
-  <section id="game">
-    <div class="gamebox">
-      <div class="bubble"></div>
-    </div>
-
-    <div class="rules">
-      <h2>Encore là <span>?</span> Envie de jouer <span>?</span></h2>
-      <p>Mon record ? Ahah : 800 ZzzZzz...</p>
-      <h3>Ton score : <span class="score">0</span></h3>
-    </div>
-    <div class="arrow-orange"></div>
-  </section>
-
-
-
-  <!-- Lien vers le fichier JavaScript -->
-  <script src="index.js" type="module"></script>
+  <script src="index.js" type="module" defer></script>
 </body>
 
 </html>
