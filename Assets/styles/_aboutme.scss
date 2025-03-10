@@ -7,15 +7,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  @media screen and (max-width: 480px) {    
+  @media screen and (max-width: 480px) {
     height: min-content;
-}
-@media screen and (min-width: 481px) and (max-width: 900px) {
-  height: min-content;
-  
-  
-}
-
+  }
+  @media screen and (min-width: 481px) and (max-width: 900px) {
+    height: min-content;
+  }
 
   .aboutmeContent {
     display: grid;
@@ -23,12 +20,12 @@
     background-color: rgb(243, 243, 243);
     @media screen and (max-width: 480px) {
       display: flex;
-      flex-direction: column;      
-  }
-  @media screen and (min-width: 481px) and (max-width: 900px) {
-    display: flex;
       flex-direction: column;
-  }
+    }
+    @media screen and (min-width: 481px) and (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+    }
 
     .aboutmeCadre {
       display: flex;
@@ -42,8 +39,6 @@
       transition: border-radius 1s ease, opacity 0.5s, transform 0.4s;
       border-radius: 100%;
       transform: translateX(200%);
-          
-           
     }
 
     .aboutmeLeft {
@@ -55,16 +50,12 @@
       transform: translateX(-200%);
       transition: 0.5s ease;
       display: grid;
-      @media screen and (max-width: 480px) {    
+      @media screen and (max-width: 480px) {
         gap: 15px;
-                
-    }
-    @media screen and (min-width: 481px) and (max-width: 900px) {
-      gap: 15px;
-    }
-    
-      
-    
+      }
+      @media screen and (min-width: 481px) and (max-width: 900px) {
+        gap: 15px;
+      }
 
       p {
         padding: 20px 30px;
@@ -112,7 +103,6 @@
       }
     }
 
-    
     .aboutmeRight {
       background: url(./Assets/imgs/flavien2.png) no-repeat;
       background-size: cover;
@@ -126,14 +116,14 @@
       background-color: orange;
       border-radius: 100%;
       transition: border-radius 1s ease, opacity 0.5s;
-      @media screen and (max-width: 480px) {    
+      @media screen and (max-width: 480px) {
         height: 499px;
-    }
-    @media screen and (min-width: 481px) and (max-width: 900px) {
-      height: 499px;
-      width: 100%;
-      margin: 0 auto;
-    }
+      }
+      @media screen and (min-width: 481px) and (max-width: 900px) {
+        height: 499px;
+        width: 100%;
+        margin: 0 auto;
+      }
     }
   }
 

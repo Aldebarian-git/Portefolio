@@ -309,6 +309,65 @@ function burger() {
   });
 }
 
+/**
+ * Fonction pour animer la section compétences au scroll
+ */
+function animateSkillsSection() {
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.35
+  };
+
+  const handleIntersect = (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Animation du titre HardSkill
+        const hardSkillTitle = entry.target.querySelector('.hardSkill-title');
+        if (hardSkillTitle) {
+          hardSkillTitle.style.transform = 'translateX(0)';
+          hardSkillTitle.style.opacity = '1';
+        }
+
+        // Animation des stacks avec délai
+        const stacks = entry.target.querySelectorAll('#stacksContainer > div');
+        stacks.forEach((stack, index) => {
+          setTimeout(() => {
+            stack.style.transform = 'translateY(0)';
+            stack.style.opacity = '1';
+          }, index * 100);
+        });
+
+        // Animation du titre SoftSkill
+        const softSkillTitle = entry.target.querySelector('.softSkill-title');
+        if (softSkillTitle) {
+          setTimeout(() => {
+            softSkillTitle.style.transform = 'translateX(0)';
+            softSkillTitle.style.opacity = '1';
+          }, 300);
+        }
+
+        // Animation des softskills avec délai
+        const softSkills = entry.target.querySelectorAll('#softSkillContainer > div');
+        softSkills.forEach((skill, index) => {
+          setTimeout(() => {
+            skill.style.transform = 'translateY(0)';
+            skill.style.opacity = '1';
+          }, (index * 100) + 400);
+        });
+
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(handleIntersect, options);
+  const skillSection = document.querySelector('#skill');
+  
+  if (skillSection) {
+    observer.observe(skillSection);
+  }
+}
 
 burger();
 createsoftskill();
@@ -321,21 +380,7 @@ displayInfoSProjects();
 displayLiAfter();
 bubleGenerator();
 typeEffect();
+animateSkillsSection();
 
 
-// Le code semble bien structuré avec plusieurs fonctions qui gèrent différentes parties de l'interface utilisateur :
 
-// - Des effets visuels (typeEffect, bubleGenerator)
-// - La gestion du menu burger
-// - L'affichage de sections (about, nav)
-// - La création et l'affichage de projets/compétences
-// - Des interactions utilisateur (hover, click)
-
-// Les fonctions sont bien documentées avec des commentaires explicatifs.
-// L'organisation est claire avec l'import des données au début et l'appel des fonctions à la fin.
-
-// Suggestions possibles d'amélioration :
-// - Regrouper les fonctions liées (ex: nav, display, interactions)
-// - Ajouter de la gestion d'erreurs
-// - Optimiser certaines animations avec requestAnimationFrame
-// - Utiliser des constantes pour les valeurs magiques
