@@ -236,8 +236,13 @@ function displayNavButtonUp() {
 
 function displayNavSection() {
   const navBar = document.getElementById("navBar");
+  const footer = document.querySelector("footer");
+
   window.addEventListener("scroll", () => {
-    if (window.scrollY >= 80) {
+    const footerPosition = footer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (window.scrollY >= 80 && footerPosition > windowHeight) {
       navBar.style.position = "fixed";
       navBar.style.bottom = "0";
       navBar.style.left = "50%";
@@ -247,15 +252,26 @@ function displayNavSection() {
       navBar.style.borderLeft = "1px solid orange";
       navBar.style.transform = "translateX(-50%)";
       navBar.style.maxWidth = "1300px";
+      navBar.style.opacity = "1";
+      navBar.style.visibility = "visible";
     } else {
-      navBar.style.position = "static";
-      navBar.style.bottom = "auto";
-      navBar.style.left = "0";
-      navBar.style.borderBottom = "1px solid #ccc";
-      navBar.style.borderTop = "none";
-      navBar.style.borderLeft = "none";
-      navBar.style.borderRight = "none";
-      navBar.style.transform = "none";
+      if (footerPosition <= windowHeight) {
+        // Si le footer est visible
+        navBar.style.opacity = "0";
+        navBar.style.visibility = "hidden";
+      } else {
+        // Si on est en haut de la page
+        navBar.style.position = "static";
+        navBar.style.bottom = "auto";
+        navBar.style.left = "0";
+        navBar.style.borderBottom = "1px solid #ccc";
+        navBar.style.borderTop = "none";
+        navBar.style.borderLeft = "none";
+        navBar.style.borderRight = "none";
+        navBar.style.transform = "none";
+        navBar.style.opacity = "1";
+        navBar.style.visibility = "visible";
+      }
     }
   });
 }
