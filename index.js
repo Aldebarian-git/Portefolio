@@ -219,30 +219,31 @@ function createsoftskill() {
   });
 }
 /**
- * Fonction qui affiche ou désaffiche le button Up pour remonter à la navBar
+ * Fonction qui gère tous les événements de scroll de manière optimisée
  */
-function displayNavButtonUp() {
+function handleScroll() {
+  // Variables DOM (définies en dehors pour éviter les requêtes multiples)
+  const navBar = document.getElementById("navBar");
   const navButtonUp = document.getElementById("buttonUp");
-  window.addEventListener("scroll", (e) => {
+  const footer = document.querySelector("footer");
+
+  // Fonction qui regroupe toute la logique de scroll
+  window.addEventListener("scroll", () => {
+    // Gestion du bouton Up
     if (window.scrollY > 200) {
       navButtonUp.style.opacity = "1";
       navButtonUp.style.visibility = "visible";
-    } else if (window.scrollY < 200) {
+    } else {
       navButtonUp.style.opacity = "0";
       navButtonUp.style.visibility = "hidden";
     }
-  });
-}
 
-function displayNavSection() {
-  const navBar = document.getElementById("navBar");
-  const footer = document.querySelector("footer");
-
-  window.addEventListener("scroll", () => {
+    // Gestion de la navbar avec le footer
     const footerPosition = footer.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 
     if (window.scrollY >= 80 && footerPosition > windowHeight) {
+      // NavBar fixe
       navBar.style.position = "fixed";
       navBar.style.bottom = "0";
       navBar.style.left = "50%";
@@ -254,42 +255,28 @@ function displayNavSection() {
       navBar.style.maxWidth = "1300px";
       navBar.style.opacity = "1";
       navBar.style.visibility = "visible";
+    } else if (footerPosition <= windowHeight) {
+      // Footer visible
+      navBar.style.opacity = "0";
+      navBar.style.visibility = "hidden";
     } else {
-      if (footerPosition <= windowHeight) {
-        // Si le footer est visible
-        navBar.style.opacity = "0";
-        navBar.style.visibility = "hidden";
-      } else {
-        // Si on est en haut de la page
-        navBar.style.position = "static";
-        navBar.style.bottom = "auto";
-        navBar.style.left = "0";
-        navBar.style.borderBottom = "1px solid #ccc";
-        navBar.style.borderTop = "none";
-        navBar.style.borderLeft = "none";
-        navBar.style.borderRight = "none";
-        navBar.style.transform = "none";
-        navBar.style.opacity = "1";
-        navBar.style.visibility = "visible";
-      }
+      // Haut de page
+      navBar.style.position = "static";
+      navBar.style.bottom = "auto";
+      navBar.style.left = "0";
+      navBar.style.borderBottom = "1px solid #ccc";
+      navBar.style.borderTop = "none";
+      navBar.style.borderLeft = "none";
+      navBar.style.borderRight = "none";
+      navBar.style.transform = "none";
+      navBar.style.opacity = "1";
+      navBar.style.visibility = "visible";
     }
   });
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const container = document.querySelector(".aboutme-infos");
-  const button = document.getElementById("see-more-btn");
-
-  if (!container || !button) return;
-
-  button.addEventListener("click", () => {
-    container.classList.toggle("expanded");
-    button.textContent = container.classList.contains("expanded")
-      ? "Voir moins"
-      : "Voir plus";
-  });
-});
-
+/**
+ * Fonction qui affiche ou désaffiche la section à propos de moi
+ */
 function displayAboutSection() {
   const aboutMeLeft = document.querySelector(".aboutmeLeft");
   const aboutMeRight = document.querySelector(".aboutmeCadre");
@@ -307,7 +294,9 @@ function displayAboutSection() {
     aboutMeTitle.style.transform = "translateY(0%)";
   });
 }
-
+/**
+ * Fonction qui affiche ou désaffiche le menu burger
+ */
 function burger() {
   const sideBar = document.getElementById("side-bar");
   const btn = document.getElementById("btn");
@@ -387,9 +376,8 @@ function animateSkillsSection() {
 
 burger();
 createsoftskill();
-displayNavSection();
+handleScroll();
 displayAboutSection();
-displayNavButtonUp();
 createProject();
 createStack();
 displayInfoSProjects();
