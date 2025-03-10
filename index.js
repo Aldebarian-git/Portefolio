@@ -275,7 +275,7 @@ function handleScroll() {
   });
 }
 /**
- * Fonction qui affiche ou désaffiche la section à propos de moi
+ * Fonction qui anime la section à propos de moi
  */
 function displayAboutSection() {
   const aboutMeLeft = document.querySelector(".aboutmeLeft");
@@ -374,6 +374,37 @@ function animateSkillsSection() {
   }
 }
 
+/**
+ * Fonction qui gère l'affichage du contenu complet de la section À propos de moi
+ */
+function toggleAboutMeContent() {
+  const seeMoreBtn = document.getElementById("see-more-btn");
+  const aboutMeInfos = document.querySelector(".aboutme-infos");
+  const cadre = document.querySelector(".cadre");
+
+  seeMoreBtn.addEventListener("click", () => {
+    const isExpanded = aboutMeInfos.classList.contains("expanded");
+    
+    // Animation du bouton
+    seeMoreBtn.style.transform = "scale(0.95)";
+    setTimeout(() => {
+      seeMoreBtn.style.transform = "scale(1)";
+    }, 100);
+
+    // Animation du cadre
+    cadre.style.transform = "scale(0.98)";
+    setTimeout(() => {
+      cadre.style.transform = "scale(1)";
+    }, 100);
+
+    // Toggle de la classe avec un délai pour laisser l'animation du bouton se terminer
+    setTimeout(() => {
+      aboutMeInfos.classList.toggle("expanded");
+      seeMoreBtn.textContent = !isExpanded ? "Voir moins" : "Voir plus";
+    }, 150);
+  });
+}
+
 burger();
 createsoftskill();
 handleScroll();
@@ -385,6 +416,7 @@ displayLiAfter();
 bubleGenerator();
 typeEffect();
 animateSkillsSection();
+toggleAboutMeContent();
 
 
 
