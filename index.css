@@ -29,21 +29,18 @@ html {
   --var-border-color-light: orange;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100%;
 }
 @media screen and (max-width: 480px) {
   html {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    margin: auto;
-    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 900px) {
   html {
     width: 100%;
-    margin: auto;
-    overflow-x: hidden;
+    margin: 0;
   }
 }
 
@@ -53,17 +50,16 @@ html {
 }
 
 body {
-  background-color: var(--var-bg-color-light);
+  width: 100%;
   max-width: 1300px;
-  margin: auto;
+  margin: 0 auto;
+  background-color: var(--var-bg-color-light);
+  overflow-x: hidden;
 }
 @media screen and (max-width: 480px) {
   body {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    margin: auto;
-    overflow-x: hidden;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 body .logo-Dev-By-Flav {
