@@ -21,11 +21,11 @@ const projects = [
     link: "#",
   },
   {
-    name: "Heros League",
-    image: "./Assets/imgs/heroLeague.jpg",
-    technologies: ["HTML", "CSS"],
-    description: "Intégration d'un site web de service de super-héros",
-    link: "#",
+    name: "MyKanban",
+    image: "./Assets/imgs/mykanban.jpg",
+    technologies: ["HTML", "CSS", "BULMA","JavaScript", "API", "SPA", "PostGreSQL", "Sequelize"],
+    description: "Une SPA de gestion de projet, avec Drag&Drop",
+    link: "https://my-kanban-spa.vercel.app",
   },
   {
     name: "Pixel-Art",
