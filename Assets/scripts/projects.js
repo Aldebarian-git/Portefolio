@@ -31,7 +31,7 @@ const projects = [
     name: "Pokedex",
     image: "./Assets/imgs/pokedex.jpg",
     technologies: ["HTML", "CSS", "JavaScript", "API", "SPA", "Node.js", "Express", "JWT", "PostgreSQL", "Sequelize"],
-    description: "Une Pokedex en ligne, avec authentification, et possibilité de créer son propre compte",
+    description: "Un Pokedex en ligne, avec authentification, et possibilité de créer son compte, et de gérer ses équipes",
     link: "https://pokedex-spa-mu.vercel.app",
   },
   {
