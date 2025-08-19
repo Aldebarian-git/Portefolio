@@ -143,6 +143,7 @@ function createProject() {
     // Créer un élément <a> au lieu d'une <div> pour encapsuler le projet
     const projectLink = document.createElement("a");
     projectLink.href = `${project.link}`; // Définir l'attribut href
+    projectLink.target = "_blank"; // Ouvrir dans un nouvel onglet
     projectLink.classList.add("newProjet", "projetS");
     projectLink.style.background = `url(${project.image}) center/cover no-repeat`;
 

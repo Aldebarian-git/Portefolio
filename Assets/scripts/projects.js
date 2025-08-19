@@ -35,11 +35,11 @@ const projects = [
     link: "https://pokedex-spa-mu.vercel.app",
   },
   {
-    name: "Trip O'dvisor",
-    image: "./Assets/imgs/tripodvisor.jpg",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    description: "Toute ressemblance est complètement fortuite",
-    link: "#",
+    name: "IACréa",
+    image: "./Assets/imgs/iacrea.jpg",
+    technologies: ["Next.js", "Tailwind", "Supabase"],
+    description: "J'ai réalisé seul la landing page de la startup IACréa",
+    link: "https://www.iacrea.com",
   },
   {
     name: "La GhibliO'thèque",
